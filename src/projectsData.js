@@ -5,7 +5,7 @@ export const projects = [
     technologies: ['reactJS', 'styled-components', 'react-hooks', 'reducer', 'firebase', 'stripe'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt enim. Pellentesque rhoncus semper nunc, id sodales turpis ultrices sed. Suspendisse nec malesuada metus, convallis pulvinar massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
     img: 'https://assets.flagfamily.com/web/styles/large/s3/images/articles/amazon-1599068940.jpg?3FPA_T5g6RGYN_7yPtS4u90lWp0lsqTM&itok=LIKxt39y',
-    site: '',
+    site: 'https://amzn-cln-ed1f8.firebaseapp.com',
     source: 'https://github.com/ByrnesByrnes/amazon-cln',
   },
   {
