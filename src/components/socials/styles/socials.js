@@ -8,6 +8,10 @@ export const Container = styled.div
   bottom: 80px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 390px){
+    bottom: 40px;
+  }
 `
 
 export const List = styled.ul 

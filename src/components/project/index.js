@@ -8,7 +8,8 @@ import {
   Link,
   Item,
   Group,
-  Info
+  Info,
+  LinkGroup
 } from './styles/project'
 
 export default function Project({children, ...restProps}) {
@@ -41,5 +42,9 @@ Project.Text = function ProjectText({children, ...restProps}) {
 
 Project.Link = function ProjectLink({children, ...restProps}) {
   return <Link {...restProps}>{children}</Link>
+}
+
+Project.LinkGroup = function ProjectLinkGroup({children, ...restProps}) {
+  return <LinkGroup {...restProps}>{children}</LinkGroup>
 }
 

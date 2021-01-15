@@ -32,6 +32,10 @@ export const Square = styled.div
   height: 400px;
   border: solid 20px #000;
   animation: ${rotate} 50s linear infinite;
+
+  @media(max-width: 390px) {
+    bottom: -160px;
+  }
 `
 
 export const SquareSmall = styled(Square)
@@ -43,4 +47,9 @@ export const SquareSmall = styled(Square)
   height: 100px;
   width: 100px;
   animation-delay: 3s;
+  tranition: 2s;
+  
+  @media (max-width: 390px) {
+    top: 12%;
+  }
 `

@@ -26,6 +26,9 @@ export const Title = styled.h2
   @media (min-width: 991px) {
     font-size: 6em;
   }
+  @media (max-width: 390px) {
+    font-size: 2.5em;
+  }
 `
 
 export const Subtitle = styled.h3
@@ -37,7 +40,9 @@ export const Subtitle = styled.h3
   @media (min-width: 991px) {
     font-size: 3em;
   }
-
+  @media (max-width: 390px) {
+    font-size: 1.5em;
+  }
 `
 
 export const Text = styled.p 
@@ -49,6 +54,7 @@ export const Text = styled.p
   font-size: 1.2em;
   animation: ${fadeIn} 1s ease-in-out forwards;
   animation-delay: 3.4s;
+
 `
 
 export const Link = styled(RouterLink)

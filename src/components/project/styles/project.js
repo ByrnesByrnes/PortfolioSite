@@ -5,7 +5,6 @@ export const Container = styled.section
   padding-top: 60px;
   margin: 0 auto;
   max-width: 1200px;
-
 `
 export const Item = styled.div
 `
@@ -58,6 +57,14 @@ export const Image = styled.img
 `
 
   width: 100%;
+`
+export const LinkGroup = styled.div
+`
+  text-align:center;
+
+  @media (min-width 991px) {
+    text-align: left;
+  }
 `
 
 export const Link = styled.a
