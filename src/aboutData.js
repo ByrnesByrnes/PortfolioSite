@@ -36,10 +36,10 @@ export const aboutData = [
   },
   { 
     id: 4,
-    title: 'Styled-Components',
-    icon: '/imgs/styled-components-icon.png',
-    color: 'yellow',
-    image: true
+    title: 'NPM',
+    icon: <IoLogoNpm/>,
+    color: '#cc3534',
+    image: false
   },
   { 
     id: 5,
@@ -57,10 +57,10 @@ export const aboutData = [
   },
   { 
     id: 7,
-    title: 'NPM',
-    icon: <IoLogoNpm/>,
-    color: '#cc3534',
-    image: false
+    title: 'Styled-Components',
+    icon: '/imgs/styled-components-icon.png',
+    color: 'yellow',
+    image: true
   },
   { 
     id: 8,

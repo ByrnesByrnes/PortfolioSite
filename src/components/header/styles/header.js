@@ -1,19 +1,26 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import {
   Link as RouterLink,
   fadeInBottom
 } from '../../../globalStyles'
 
 
+const moonAppear = keyframes
+`
+
+`
+
 export const Container = styled.header
 `
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center; 
   padding: 0 10%;
   width: 100%;
   height: 60px;
+  background: #fff;
+  z-index: 20;
 
   @media (min-width: 991px) {
     
@@ -51,7 +58,6 @@ export const Nav = styled.nav
 export const NavList = styled.ul
   `
   position: relative;
-  
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -114,11 +120,10 @@ export const Toggle = styled.div
 `
   opacity: 0;
   position: absolute;
-  top: 25%;
   z-index: 20;
   font-size: 2em;
-
   padding-right: 10%;
+  height: 32px;
   right: 0;
   cursor: pointer;
   transition: .5s;
@@ -132,12 +137,37 @@ export const Toggle = styled.div
 
 export const Theme = styled.div 
 `
-  margin-right: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 20%;
+  margin-right: 10px;
   width: 50px;
   height: 25px;
-  border: 1px solid black;
+  background-color: var(--clr-secondary);
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
   
-  .themeContainer {
-    
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: 
+      translateY(-50%) 
+      translateX(${({ darkMode }) => darkMode ? '100%' : '0'}) scaleX(-1)
+      rotate(${({ darkMode }) => darkMode ? '0deg' : '-90deg'});
+
+    font-size: 25px;
+    color: #000;
+    border-radius: 50%;
+    z-index: 1;
+    transition: .3s ease;
+
+    & ~ svg {
+      color: ${({ darkMode }) => darkMode ? 'orange' : '#fff'};
+      z-index: 0;
+      background: grey;
+      
+    }
   }
 `

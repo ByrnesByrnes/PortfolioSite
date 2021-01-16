@@ -15,7 +15,7 @@ export const Container = styled.div
 `
   opacity: 0;
   position: absolute;
-  min-height: 700px;
+  min-height: 500px;
   height: 100vh;
   width: 100%;
   animation: ${fadeIn} 2s forwards;
@@ -30,7 +30,8 @@ export const Square = styled.div
   left: 50%;
   width: 400px;
   height: 400px;
-  border: solid 20px #000;
+  border: solid 20px var(--clr-primary);
+  
   animation: ${rotate} 50s linear infinite;
 
   @media(max-width: 390px) {
@@ -43,7 +44,8 @@ export const SquareSmall = styled(Square)
   top: 20%;
   left: -50px;
   bottom: auto;
-  border: solid 10px #000;
+  border: solid 10px var(--clr-primary);
+  
   height: 100px;
   width: 100px;
   animation-delay: 3s;

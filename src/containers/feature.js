@@ -15,7 +15,7 @@ export function FeatureContainer() {
         <Feature.Text>I love solving problems. Let me solve yours!</Feature.Text>
         <Feature.Link to={ROUTES.PROJECTS}>Projects</Feature.Link>
       </Feature.Group>
-      <Feature.Image src="/imgs/svg/undraw_developer_activity.svg" alt="some" />
+      <Feature.Image src="imgs/svg/undraw_developer_activity.svg" alt="" />
       <SocialsContainer />
     </Feature>
   )

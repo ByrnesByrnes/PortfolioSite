@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import * as ROUTES from './constants/routes'
+import { ThemeContextConsumer } from './context/themeContext'
 import { HeaderContainer } from './containers/header'
+
 import {
   Home,
   About,
@@ -11,13 +13,17 @@ import {
 function App() {
   return (
     <Router>
-    <HeaderContainer />
+      <ThemeContextConsumer>
+        {({ darkMode, setDarkMode }) => (
+          <HeaderContainer darkMode={darkMode} setDarkMode={setDarkMode} />
+        )}
+      </ThemeContextConsumer>
       <Switch>
         <Route path={ROUTES.ABOUT}>
           <About />
         </Route>
         <Route path={ROUTES.CONTACT}>
-          <Contact/>
+          <Contact />
         </Route>
         <Route path={ROUTES.PROJECTS}>
           <Projects />
