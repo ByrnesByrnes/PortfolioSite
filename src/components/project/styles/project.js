@@ -5,6 +5,8 @@ export const Container = styled.section
   padding-top: 60px;
   margin: 0 auto;
   max-width: 1200px;
+  background: var(--clr-bg);
+  transition: .4s ease-in-out;
 `
 export const Item = styled.div
 `
@@ -18,6 +20,8 @@ export const Item = styled.div
 
   :last-of-type {
     border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 40px;
   }
 
   @media (min-width: 991px) {
@@ -41,16 +45,19 @@ export const Info = styled.div
 export const Title = styled.h2
 `
   color: var(--clr-secondary);
+  margin-bottom: 10px;
 `
 
 export const Subtitle = styled.h3
 `
   font-weight: 600;
+  margin-bottom: 10px;
 `
 
 export const Text = styled.p 
 `
- 
+  margin-bottom: 15px;
+  line-height: 1.5;
 `
 
 export const Image = styled.img 

@@ -15,6 +15,7 @@ export const Container = styled.section
   display: grid;
   justify-content: center;
   align-items: center;
+  transition: .4s ease-in-out;
 `
 
 export const Title = styled.h2 
@@ -22,6 +23,7 @@ export const Title = styled.h2
   position: relative;
   z-index: 10;
   font-size: 3em;
+ 
 
   @media (min-width: 991px) {
     font-size: 6em;
@@ -62,6 +64,7 @@ export const Link = styled(RouterLink)
   border-radius: 8px;
 
   &:hover {
+    color: var(--clr-primary);
     background: var(--clr-secondary);
   }
 `
@@ -109,7 +112,7 @@ export const Group = styled.div
     position: absolute;
     top: 0;
     left: 0;
-    background: #000;
+    background: var(--clr-secondary);
     width: 100%;
     height: 100%;
     transform-origin: right;

@@ -9,9 +9,10 @@ const primary = '#000'
 const secondary = '#2196F3'
 const third = 'crimson'
 const white = '#fff'
-const darkGrey = '#101010'
+const darkGrey = '#151515'
 const black = '#000'
-
+const darkBorder = 'rgb(100,100,100)'
+const lightBorder = 'rgb(220,220,220)'
 
 // const size = {
 //   mobileS: '320px',
@@ -91,8 +92,12 @@ export const GlobalStyle = createGlobalStyle
 
   :root {
     --clr-primary: ${({darkMode}) => darkMode ? white : black }; //black
-    --clr-secondary: ${({darkMode}) => darkMode ? third : secondary }; //Blue
+
+    --clr-secondary: ${secondary}; //Blue
     --clr-bg: ${({darkMode}) => darkMode ? darkGrey : white };
+    --clr-bdr: ${({darkMode}) => darkMode ? lightBorder : darkBorder };
+    --clr-form: ${({darkMode}) => darkMode ? '#202020' : white };
+    --clr-text: ${({darkMode}) => !darkMode ? white : black }
   }
 
   body {
@@ -103,11 +108,11 @@ export const GlobalStyle = createGlobalStyle
     line-height: 1.3;
     font-family: 'Titillium Web', sans-serif;
     background: --clr-bg;
-    transition: 1s ease;
   }
 
   // ==== General Styles =====
-  h1,h2,h3,h4,h5 {
+  h1,h2,h3,h4,h5,p {
+    color: var(--clr-primary);
     padding: 0;
     margin: 0;
   }
@@ -131,8 +136,8 @@ export const Link = styled(RouterLink)
   display: inline-block;
   margin: 20px 0 0;
   padding: 10px 20px;
-  background: #000;
-  color: #fff;
+  background: var(--clr-primary);
+  color: var(--clr-text);
   text-decoration: none;
   font-size: 1.2em;
   letter-spacing: 1px;

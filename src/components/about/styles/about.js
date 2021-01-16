@@ -72,14 +72,14 @@ export const Container = styled.section
   position: relative;
   padding: 100px 10px 0;
   display: flex;
-  
+  background: var(--clr-bg);
   flex-direction: column;
   align-items: center;
   max-width: 1500px;
   width: 100%;
   min-height: 500px;
   height: 100vh;
-  
+  transition: .4s ease-in-out;
   
   @media (min-width: 600px) {
     flex-direction: row;

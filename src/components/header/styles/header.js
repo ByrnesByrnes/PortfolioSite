@@ -19,8 +19,9 @@ export const Container = styled.header
   padding: 0 10%;
   width: 100%;
   height: 60px;
-  background: #fff;
+  background: var(--clr-bg);
   z-index: 20;
+  transition: .4s ease-in-out;
 
   @media (min-width: 991px) {
     
@@ -39,7 +40,6 @@ export const Nav = styled.nav
   height: 100vh;
   width: 100%;
   left: 0;
-  background: #fff;
   transform: translateX(${({ toggle }) => toggle ? '0%' : '-100%' });
   z-index: 200;
   transition: 0.5s;
@@ -62,7 +62,9 @@ export const NavList = styled.ul
   flex-direction: column;
   text-align: center;
   height: 100vh;
-
+  background: var(--clr-bg);
+  transition: .4s ease-in-out;
+  
   @media (min-width: 991px) {
     flex-direction: row;
     height: fit-content;
@@ -76,12 +78,11 @@ export const NavItem = styled.li
 export const Link = styled(RouterLink)
 `
   display: block;
-  background: #fff;
+  background: var(--clr-bg);
   margin: 0;
-  color: black;
+  color: var(--clr-primary);
   width: 100%;
-  border-bottom: 1px solid rgba(0,0,0,.2);
-  
+  border-bottom: 1px solid var(--clr-bdr);
 
   &.active {
     background: var(--clr-secondary);
@@ -100,7 +101,6 @@ export const Logo = styled.div
   position: relative;
   z-index: 20;
   opacity: 0;
-  color: var(--clr-primary);
   height: 50px;
   line-height: 50px;
   font-size: 2em;
@@ -113,6 +113,7 @@ export const Logo = styled.div
     margin: 0;
     background: none;
     border: none;
+    color: var(--clr-primary);
   }
 `
 
@@ -126,6 +127,7 @@ export const Toggle = styled.div
   height: 32px;
   right: 0;
   cursor: pointer;
+  color: var(--clr-primary);
   transition: .5s;
 
   animation: ${fadeInBottom} .5s ease-in-out forwards;

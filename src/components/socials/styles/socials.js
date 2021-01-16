@@ -23,7 +23,7 @@ export const Item = styled.li
 `
   cursor: pointer;
   font-size: 2em;
-  color: #000;
+  color: var(--clr-primary);
   background: none;
   margin: 0 20px;
   padding: 0;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ImGithub, ImLinkedin } from 'react-icons/im'
-import { GrContact } from 'react-icons/gr'
+import { AiOutlineMessage } from 'react-icons/ai'
 import { Socials, Modal } from '../components'
 import { FormContainer} from './form'
 export function SocialsContainer() {
@@ -16,7 +16,7 @@ export function SocialsContainer() {
           <Socials.Link href="#"><ImLinkedin /></Socials.Link>
         </Socials.Item>
         <Socials.Item>
-          <GrContact onClick={() => setModalShow(!modalShow)} />
+          <AiOutlineMessage onClick={() => setModalShow(!modalShow)} />
         </Socials.Item>
         <Modal>
           <Modal.Content modalShow={modalShow}>
