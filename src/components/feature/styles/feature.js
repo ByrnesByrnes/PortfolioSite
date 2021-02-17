@@ -3,7 +3,7 @@ import {
   revealText,
   revealTextReverse,
   fadeIn,
-  Link as RouterLink,
+  Link as smoothLink,
 } from '../../../globalStyles'
 
 export const Container = styled.section
@@ -58,7 +58,7 @@ export const Text = styled.p
 
 `
 
-export const Link = styled(RouterLink)
+export const Link = styled(smoothLink)
 `
   border-radius: 8px;
 
@@ -67,29 +67,38 @@ export const Link = styled(RouterLink)
     background: var(--clr-secondary);
   }
 `
-
-export const Image = styled.img 
+export const ImageContainer = styled.div 
 `
-  opacity: 0;
-  width: 100%;
-  animation: ${fadeIn} 1s ease-in-out forwards;
-  animation-delay: 3.8s;
+  position: relative;
   display: none;
   transition: .4s ease-in-out;
-  
+  opacity: 0;
+  transform: scale(.4);
+  animation: ${fadeIn} 1s ease-in-out forwards;
+  animation-delay: 3.8s;
+  width: 1000px;
+
+
+  & > div {
+    position: absolute;
+    transform: scale(.25);
+    right: 35px;
+    top: 25.5rem;
+  }
+
   @media (min-width: 800px) {
     display: block;
     margin-left: auto;
-    max-width: 500px;
+    transform: scale(.6);
   }
 
-  @media (min-width: 991px) {
-    max-width: 700px;
-  }
   @media (min-width: 1200px) {
-    max-width: 1000px;
+    
+    transform: scale(.8);
   }
-
+`
+export const Image = styled.img 
+`
 `
 
 export const Group = styled.div 

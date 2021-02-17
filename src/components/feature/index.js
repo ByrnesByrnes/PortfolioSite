@@ -7,7 +7,7 @@ import {
   Group,
   Link,
   Image,
-  Square
+  ImageContainer,
 } from './styles/feature'
 
 export default function Feature({children, ...restProps}) {
@@ -36,4 +36,7 @@ Feature.Link = function FeatureLink({children, ...restProps}) {
 
 Feature.Image = function FeatureImage({...restProps}) {
   return <Image {...restProps} />
+}
+Feature.ImageContainer = function FeatureImageContainer({children, ...restProps}) {
+  return <ImageContainer {...restProps}>{children}</ImageContainer>
 }

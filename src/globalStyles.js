@@ -115,7 +115,7 @@ export const GlobalStyle = createGlobalStyle
     margin: 0 auto;
     max-width: 1400px;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 20px;
     transition: .4s ease-in-out;
 
     @media (min-width: 800px) {
@@ -130,12 +130,16 @@ export const GlobalStyle = createGlobalStyle
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 100%;
-    margin: 30px 0;
-
+    margin: 30px 0 0px;
+    
     & > .accent {
       color: var(--clr-secondary);
+    }
+    @media (min-width: 500px) {
+      margin: 30px 0;
+      font-size: 4rem;
     }
   }
 

@@ -7,9 +7,8 @@ export const Container = styled.form
   padding: 20px;
   min-width: 300px;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   border-radius: 8px;
-  margin: 0 auto;
   background: var(--clr-form);
   box-shadow: 10px 5px 25px 4px rgba(0,0,0,0.15);
   -webkit-box-shadow: 5px 10px 25px 4px rgba(0,0,0,0.15);
@@ -62,7 +61,6 @@ export const Button = styled.button
   color: var(--clr-text);
   font-size: 1em;
   letter-spacing: 1px;
-
   transition: .4s ease-in-out;
 
   :hover {
@@ -93,6 +91,7 @@ export const InputBox = styled.div
     resize: none;
     color: var(--clr-primary);
     background: transparent;
+    appearance: none;
   }
 
   ${Input}:focus ~ ${Label},

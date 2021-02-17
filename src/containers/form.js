@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Form } from '../components'
 
-export function FormContainer({ setModalShow }) {
+export function FormContainer({ setModalShow, messageTitle="Send Message" }) {
   const [confirm, setConfirm] = useState('')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -24,15 +24,12 @@ export function FormContainer({ setModalShow }) {
 
   }
 
-
-
-
   return (
     <Form onSubmit={handleSubmit}>
       {confirm ?
-        <Form.Title style={{ fontSize: "1em" }}>{confirm}</Form.Title> :
+        <Form.Title style={{ fontSize: "1rem" }}>{confirm}</Form.Title> :
         <>
-          <Form.Title>Send Message</Form.Title>
+          <Form.Title>{messageTitle}</Form.Title>
           <Form.InputBox>
             <Form.Input
               type="test"
@@ -60,7 +57,7 @@ export function FormContainer({ setModalShow }) {
             />
             <Form.Label>Type your message...</Form.Label>
           </Form.InputBox>
-          <Form.Button>Submit</Form.Button>
+          <Form.Button>Send</Form.Button>
         </>
       }
 

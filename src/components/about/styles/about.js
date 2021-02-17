@@ -84,8 +84,21 @@ export const IconImage = styled.img
 
 export const Container = styled.section 
 `
+  padding: 20px 0;
   max-width: 1000px;
+  position: relative;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 100vw;
+    background: rgba(167, 203, 232, .3);
+    margin: 0 -50vw;
+    z-index: -1;
+  }
   @media (min-width: 600px) {
     flex-direction: row;
     margin: 0 auto;

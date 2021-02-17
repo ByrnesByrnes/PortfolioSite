@@ -14,7 +14,6 @@ export const Item = styled.div
   height: fit-content;
   border-bottom: 1px solid var(--clr-secondary);
 
- 
   :last-of-type {
     border-bottom: none;
     margin-bottom: 0;
@@ -56,6 +55,7 @@ export const Subtitle = styled.h3
 
 export const Text = styled.p 
 `
+  font-size: 1rem;
   margin-bottom: 15px;
   line-height: 1.5;
 `

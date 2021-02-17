@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: 'S and R Assisted Living Facility',
     technologies: ['reactJS', 'SASS', 'react-hooks', 'reducer'],
-    description: 'Praesent dictum eros id condimentum efficitur. Etiam vehicula massa a scelerisque malesuada. Mauris venenatis euismod molestie. Nulla id justo id diam feugiat viverra ac in dui. Pellentesque at leo quis arcu varius gravida. Ut suscipit lacus et nibh pretium, eu tincidunt tellus accumsan',
+    description: 'Assisted Living Facility',
     img: '/imgs/projects/SandRassistedLiving.jpg',
     site: 'https://www.sandrassistedliving.com/',
     source: 'https://github.com/ByrnesByrnes/SandRAssistedLiving',
