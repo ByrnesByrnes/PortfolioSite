@@ -6,11 +6,7 @@ export function ProjectContainer({ projects }) {
 
   return (
     <Project>
-      <h1
-        style={{
-          textAlign: "center"
-        }}
-        >My <span className="accent">Portfolio</span></h1>
+      <h1 style={{textAlign: "center"}}>My <span className="accent">Portfolio</span></h1>
       {projects.map(project => (
         <Project.Item key={project.id}>
           <Project.Info>

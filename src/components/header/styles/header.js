@@ -39,7 +39,7 @@ export const Nav = styled.nav
   height: 100vh;
   width: 100%;
  
-  transform: translateX(${({ toggle }) => toggle ? '0%' : '-100%' });
+  transform: translateX(${({ toggle }) => toggle ? '0%' : '100%' });
   z-index: 200;
   transition: 0.5s;
   

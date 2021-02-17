@@ -58,7 +58,7 @@ export const aboutData = [
     id: 7,
     title: 'Styled-Components',
     icon: '/imgs/styled-components-icon.png',
-    color: 'yellow',
+    color: '',
     image: true
   },
   // { 

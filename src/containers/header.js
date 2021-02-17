@@ -30,7 +30,7 @@ export function HeaderContainer({ darkMode, setDarkMode }) {
                   activeClass="active"
                   smooth={true}
                   duration={500}
-                  offset={-80}
+                  offset={-60}
                   spy={true} 
                   onClick={() => setToggle(false)}
                   to={item.link}

@@ -92,6 +92,7 @@ export const InputBox = styled.div
     color: var(--clr-primary);
     background: transparent;
     appearance: none;
+    -webkit-appearance: none;
   }
 
   ${Input}:focus ~ ${Label},

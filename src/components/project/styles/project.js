@@ -76,11 +76,11 @@ export const LinkGroup = styled.div
 export const Link = styled.a
 `
   cursor: pointer;
-  color: #fff;
+  color: var(--clr-text);
   margin:0 10px 30px;
   font-weight: 600;
   padding: 10px 20px;
-  background: #000;
+  background: var(--clr-primary);
   border-radius: 8px;
   transition: .4s ease-in-out;
   display: inline-block;

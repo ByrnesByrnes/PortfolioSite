@@ -11,18 +11,15 @@ export const Container = styled.section
  
   display: flex;
   align-items: center;
+  min-height: 100vh;
   background: var(--clr-bg);
   transition: .4s ease-in-out;
-  min-height: 100vh;
-  
 `
 
 export const Title = styled.h1 
 `
   position: relative;
   z-index: 10;
-
- 
 
   @media (min-width: 991px) {
     font-size: 6em;
@@ -55,7 +52,6 @@ export const Text = styled.p
   font-size: 1.2em;
   animation: ${fadeIn} 1s ease-in-out forwards;
   animation-delay: 3.4s;
-
 `
 
 export const Link = styled(smoothLink)
@@ -73,37 +69,53 @@ export const ImageContainer = styled.div
   display: none;
   transition: .4s ease-in-out;
   opacity: 0;
-  transform: scale(.4);
+  transform: scale(1);
+  transform-origin: right;
   animation: ${fadeIn} 1s ease-in-out forwards;
   animation-delay: 3.8s;
-  width: 1000px;
-
-
+  margin-left: auto;
+ 
   & > div {
     position: absolute;
     transform: scale(.25);
-    right: 35px;
-    top: 25.5rem;
+    right: 3rem;
+    top: 14rem;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 840px) {
     display: block;
-    margin-left: auto;
-    transform: scale(.6);
+    transform: scale(.8);
   }
 
+  @media (min-width: 1040px) {
+    transform: scale(.8);
+    
+    & > div {
+      right: 7rem;
+      top: 20.5rem;
+    }
+   
+  }
   @media (min-width: 1200px) {
     
-    transform: scale(.8);
+    transform: scale(1);
   }
 `
 export const Image = styled.img 
 `
+  width: 800px;
+  height: 100%;
+
+  @media(min-width: 1040px) {
+    width: 1000px;
+  }
 `
 
 export const Group = styled.div 
 `
   position: absolute;
+
+  z-index: 10;
 
   ${Title},
   ${Subtitle} {

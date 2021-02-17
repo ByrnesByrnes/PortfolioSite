@@ -6,9 +6,7 @@ const Context = createContext({
 const {Provider, Consumer} = Context
 
 function ThemeContextProvider({children}) {
-  const [darkMode, setDarkMode] = useState(false)
-
-  console.log(darkMode)
+  const [darkMode, setDarkMode] = useState(true)
   
   return (
     <Provider value={{
