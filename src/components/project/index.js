@@ -13,7 +13,7 @@ import {
 } from './styles/project'
 
 export default function Project({children, ...restProps}) {
-  return <Container {...restProps}>{children}</Container>
+  return <Container id="projects" {...restProps}>{children}</Container>
 }
 Project.Item = function ProjectItem({children, ...restProps}) {
   return <Item {...restProps}>{children}</Item>

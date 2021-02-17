@@ -13,7 +13,7 @@ export default function Home() {
   return (
    <>
       <Load />
-      <FeatureContainer/>
+      <FeatureContainer />
       <AboutContainer />
       <ProjectContainer projects={projects} />
       <ContactContainer />

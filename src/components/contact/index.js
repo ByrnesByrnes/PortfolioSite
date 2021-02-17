@@ -4,5 +4,5 @@ import {
 } from './styles/contact'
 
 export default function Contact({children, ...restProps}) {
-  return <Container {...restProps}>{children}</Container>
+  return <Container id="contact" {...restProps}>{children}</Container>
 }

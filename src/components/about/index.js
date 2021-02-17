@@ -12,7 +12,7 @@ import {
 } from './styles/about'
 
 export default function About({children, ...restProps}) {
-  return <Container {...restProps}>{children}</Container>
+  return <Container id="about" {...restProps}>{children}</Container>
 }
 
 About.Group = function AboutGroup({children, ...restProps}) {

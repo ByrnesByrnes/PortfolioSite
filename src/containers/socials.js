@@ -3,7 +3,6 @@ import { ImGithub, ImLinkedin } from 'react-icons/im'
 import { BiMessageDetail } from 'react-icons/bi'
 import { Socials, Modal } from '../components'
 import { FormContainer} from './form'
-import * as ROUTES from '../constants/routes'
 
 export function SocialsContainer() {
   const [modalShow, setModalShow] = useState(false)
@@ -20,7 +19,7 @@ export function SocialsContainer() {
           <Socials.Link target="_blank" href="www.linkedin.com/in/myron-byrnes"><ImLinkedin /></Socials.Link>
         </Socials.Item>
         
-         <Socials.Item style={{ display: curRoute === ROUTES.CONTACT ? 'none' : 'block'}}>
+         <Socials.Item style={{ display: 'block'}}>
           <BiMessageDetail onClick={() => setModalShow(!modalShow)} />
         </Socials.Item>
         <Modal>

@@ -5,6 +5,7 @@ export const Container = styled.form
   display:flex;
   flex-direction: column;
   padding: 20px;
+  min-width: 300px;
   width: 100%;
   max-width: 600px;
   border-radius: 8px;

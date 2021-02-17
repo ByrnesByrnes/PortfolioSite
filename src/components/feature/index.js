@@ -11,7 +11,7 @@ import {
 } from './styles/feature'
 
 export default function Feature({children, ...restProps}) {
-  return <Container {...restProps}>{children}</Container>
+  return <Container id="feature" {...restProps}>{children}</Container>
 }
 
 Feature.Group = function FeatureGroup({children, ...restProps}) {

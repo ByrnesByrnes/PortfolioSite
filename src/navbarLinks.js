@@ -1,24 +1,22 @@
-import * as ROUTES from './constants/routes'
-
 export const navLinks = [ 
   {
     id: 1,
-    link: `${ROUTES.HOME}`,
+    link: 'feature',
     title: 'Home'
   },
   {
     id: 2,
-    link: `${ROUTES.ABOUT}`,
+    link: 'about',
     title: 'About'
   },
   {
     id: 3,
-    link: `${ROUTES.PROJECTS}`,
+    link: 'projects',
     title: 'Projects'
   },
   {
     id: 4,
-    link: `${ROUTES.CONTACT}`,
+    link: 'contact',
     title: 'Contact'
   },
 ]

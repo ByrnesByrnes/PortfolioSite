@@ -1,6 +1,6 @@
-import React from 'react'
 import styled, { createGlobalStyle, keyframes } from 'styled-components'
-import {NavLink as RouterLink } from 'react-router-dom'
+import {Link as SmoothLink} from 'react-scroll'
+
 // Colors
 
 
@@ -78,7 +78,8 @@ export const fadeInBottom = keyframes
 
 export const GlobalStyle = createGlobalStyle
 `
-  html { 
+  html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 100%;
   }
@@ -155,8 +156,9 @@ export const GlobalStyle = createGlobalStyle
   }
 `
 
-export const Link = styled(RouterLink)
+export const Link = styled(SmoothLink)
 `
+  cursor: pointer;
   position: relative;
   z-index: 10;
   opacity: 0;

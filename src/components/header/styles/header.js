@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import {
-  Link as RouterLink,
+  Link as smoothLink,
   fadeInBottom
 } from '../../../globalStyles'
 
@@ -74,7 +74,7 @@ export const NavItem = styled.li
 `
 `
 
-export const Link = styled(RouterLink)
+export const Link = styled(smoothLink)
 `
   display: block;
   background: var(--clr-bg);
@@ -112,7 +112,7 @@ export const Logo = styled.div
   animation: ${fadeInBottom} .5s ease-in-out forwards;
   animation-delay: 4s;
 
-  ${RouterLink} {
+  ${smoothLink} {
     padding: 0;
     margin: 0;
     background: none;
