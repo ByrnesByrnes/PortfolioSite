@@ -78,9 +78,6 @@ export const fadeInBottom = keyframes
 
 export const GlobalStyle = createGlobalStyle
 `
-
-  ${({darkMode}) => console.log(darkMode)}
-
   html { 
     box-sizing: border-box;
     font-size: 100%;
@@ -102,19 +99,48 @@ export const GlobalStyle = createGlobalStyle
 
   body {
     position: relative;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     line-height: 1.3;
     font-family: 'Titillium Web', sans-serif;
-    background: --clr-bg;
+    background: var(--clr-bg);
+    transition: background .4s ease-in-out;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   // ==== General Styles =====
+  section {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 40px;
+    transition: .4s ease-in-out;
+
+    @media (min-width: 800px) {
+      // padding: 0 100px;
+    }
+  }
+
   h1,h2,h3,h4,h5,p {
     color: var(--clr-primary);
     padding: 0;
     margin: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+    width: 100%;
+    margin: 30px 0;
+
+    & > .accent {
+      color: var(--clr-secondary);
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
   ul {
@@ -123,6 +149,8 @@ export const GlobalStyle = createGlobalStyle
     list-style: none;
   }
   a {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
   }
 `

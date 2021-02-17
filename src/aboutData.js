@@ -3,11 +3,10 @@ import {
   IoLogoCss3,
   IoLogoJavascript,
   IoLogoNpm,
+  IoLogoSass,
 } from 'react-icons/io';
 import {
-  SiStyledComponents,
   SiReact,
-  SiFirebase
 } from 'react-icons/si'
 import {ImGit} from 'react-icons/im'
 
@@ -29,16 +28,16 @@ export const aboutData = [
   },
   { 
     id: 3,
-    title: 'JavaScript',
-    icon: <IoLogoJavascript/>,
-    color: '#f0db4f',
+    title: 'SASS',
+    icon: <IoLogoSass />,
+    color: '#bf4080',
     image: false
   },
   { 
     id: 4,
-    title: 'NPM',
-    icon: <IoLogoNpm/>,
-    color: '#cc3534',
+    title: 'JavaScript',
+    icon: <IoLogoJavascript/>,
+    color: '#f0db4f',
     image: false
   },
   { 
@@ -62,13 +61,20 @@ export const aboutData = [
     color: 'yellow',
     image: true
   },
+  // { 
+  //   id: 8,
+  //   title: 'Firebase',
+  //   icon: '/imgs/firebase-icon.png',
+  //   color: 'yellow',
+  //   image: true
+  // },
   { 
-    id: 8,
-    title: 'Firebase',
-    icon: '/imgs/firebase-icon.png',
-    color: 'yellow',
-    image: true
-  }
+    id: 9,
+    title: 'NPM',
+    icon: <IoLogoNpm/>,
+    color: '#cc3534',
+    image: false
+  },
 ]
 // { 
 //   id: 9,

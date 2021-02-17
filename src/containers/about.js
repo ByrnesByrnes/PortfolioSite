@@ -8,24 +8,24 @@ export function AboutContainer() {
 
   return (
     <About>
-      
       <About.Group>
-      <About.Title>About</About.Title>
-      <About.Text>I have a passion for making beautiful, responsive websites and web applications. Technology has always been a major interest in my life, and to combine modern web technology with an attention to detail is the best way to gaurentee a beautiful modern website.</About.Text>
-      <About.Text></About.Text>
+        <About.Title>About <span className="accent">Me</span></About.Title>
+        <About.Text>I have a passion for making beautiful, responsive websites and web applications. Technology has always been a major interest in my life, and to combine modern web technology with an attention to detail is the best way to gaurentee a beautiful modern website.</About.Text>
       </About.Group>
-      <About.Skills>
-        {aboutData.map(item => (
-          <About.Skill>
-            {!item.image ? 
-              <About.Icon style={{ color: item.color }}>{item.icon}</About.Icon>:
-              <About.IconImage src={item.icon}/>
-            }
-            <About.Subtitle>{item.title}</About.Subtitle>
-          </About.Skill>
-        ))}
-      </About.Skills>
-
+      <About.Group>
+        <About.Title>My <span className="accent">Skillset</span></About.Title>
+        <About.Skills>
+          {aboutData.map(item => (
+            <About.Skill key={item.id}>
+              {!item.image ?
+                <About.Icon style={{ color: item.color }}>{item.icon}</About.Icon> :
+                <About.IconImage src={item.icon} />
+              }
+              <About.Subtitle>{item.title}</About.Subtitle>
+            </About.Skill>
+          ))}
+        </About.Skills>
+      </About.Group>
     </About>
   )
 }

@@ -12,7 +12,7 @@ import {
 
 export default function Form({children, ...restProps}) {
 
-  return <Container {...restProps}>{children}</Container>
+  return <Container data-netlify="true" {...restProps}>{children}</Container>
 }
 Form.Title = function FormTitle({children, ...restProps}) {
   return <Title{...restProps}>{children}</Title>

@@ -13,44 +13,43 @@ const moonAppear = keyframes
 export const Container = styled.header
 `
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  padding: 0 10%;
+  top: 0;
   width: 100%;
   height: 60px;
-  background: var(--clr-bg);
   z-index: 20;
   transition: .4s ease-in-out;
-
-  @media (min-width: 991px) {
-    
-  }
+  background-color: var(--clr-bg);
 `
 
 export const Group = styled.div
 `
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
 
 `
 
 export const Nav = styled.nav
 `
-  position: absolute;
+  position: fixed;
   top: 60px;
   height: 100vh;
   width: 100%;
-  left: 0;
+ 
   transform: translateX(${({ toggle }) => toggle ? '0%' : '-100%' });
   z-index: 200;
   transition: 0.5s;
   
   @media (min-width: 991px) {
+    position: relative;
     background: none;
     width: fit-content;
     left: auto;
     top: 0;
-    right: 10%;
-    height: fit-content;
+    height: 60px;
     transform: translateX(0);
   }
 
@@ -67,7 +66,7 @@ export const NavList = styled.ul
   
   @media (min-width: 991px) {
     flex-direction: row;
-    height: fit-content;
+    height: 60px;
     align-items: center;
   }
 `
@@ -84,6 +83,10 @@ export const Link = styled(RouterLink)
   width: 100%;
   border-bottom: 1px solid var(--clr-bdr);
 
+  &:last-of-type {
+    margin-right: 10px;
+  }
+
   &.active {
     background: var(--clr-secondary);
   }
@@ -98,6 +101,7 @@ export const Link = styled(RouterLink)
 
 export const Logo = styled.div
 `
+  margin-left: 10px;
   position: relative;
   z-index: 20;
   opacity: 0;
@@ -123,7 +127,7 @@ export const Toggle = styled.div
   position: absolute;
   z-index: 20;
   font-size: 2em;
-  padding-right: 10%;
+  padding-right: 10px;
   height: 32px;
   right: 0;
   cursor: pointer;
@@ -142,7 +146,7 @@ export const Theme = styled.div
   position: absolute;
   display: flex;
   align-items: center;
-  right: 20%;
+  right: 40px;
   margin-right: 10px;
   width: 50px;
   height: 25px;
@@ -150,7 +154,8 @@ export const Theme = styled.div
   border-radius: 50px;
   cursor: pointer;
   overflow: hidden;
-  
+  z-index: 1000;
+
   svg {
     position: absolute;
     top: 50%;
@@ -169,7 +174,10 @@ export const Theme = styled.div
       color: ${({ darkMode }) => darkMode ? 'orange' : '#fff'};
       z-index: 0;
       background: grey;
-      
     }
+  }
+
+  @media(min-width: 991px) {
+  
   }
 `

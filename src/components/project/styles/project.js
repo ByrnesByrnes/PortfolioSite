@@ -2,9 +2,6 @@ import styled from 'styled-components'
 
 export const Container = styled.section
 `
-  padding-top: 60px;
-  margin: 0 auto;
-  max-width: 1200px;
   background: var(--clr-bg);
   transition: .4s ease-in-out;
 `
@@ -12,12 +9,12 @@ export const Item = styled.div
 `
   display: flex;
   flex-direction: column;
-  margin: 20px 50px;
-  padding-bottom: 20px;
+  padding: 40px 0;
   justify-content: center;
   height: fit-content;
   border-bottom: 1px solid var(--clr-secondary);
 
+ 
   :last-of-type {
     border-bottom: none;
     margin-bottom: 0;
@@ -29,13 +26,16 @@ export const Item = styled.div
     
     align-items: center;
     gap: 50px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
   }
 
 `
 
 export const Group = styled.div
 `
-  width: 80%;
   margin: auto;
 `
 export const Info = styled.div 
@@ -62,7 +62,6 @@ export const Text = styled.p
 
 export const Image = styled.img 
 `
-
   width: 100%;
 `
 export const LinkGroup = styled.div

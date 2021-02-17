@@ -1,7 +1,12 @@
 import React from 'react';
-import { Load, Shapes } from '../components'
+import { Load, Shapes,Contact } from '../components'
 import { FeatureContainer } from '../containers/feature'
+import { AboutContainer } from '../containers/about'
+import { ProjectContainer } from '../containers/project'
+import { SocialsContainer} from '../containers/socials'
+import { ContactContainer } from '../containers/contact'
 
+import { projects } from '../projectsData'
 
 export default function Home() {
 
@@ -9,10 +14,14 @@ export default function Home() {
    <>
       <Load />
       <FeatureContainer/>
-      <Shapes>
+      <AboutContainer />
+      <ProjectContainer projects={projects} />
+      <ContactContainer />
+      {/* <Shapes>
         <Shapes.SquareSmall></Shapes.SquareSmall>
         <Shapes.Square></Shapes.Square>
-      </Shapes>
+      </Shapes> */}
+      <SocialsContainer />
    </>
   )
 }

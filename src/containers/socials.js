@@ -14,10 +14,10 @@ export function SocialsContainer() {
     <Socials setModalShow={setModalShow}>
       <Socials.List>
         <Socials.Item>
-          <Socials.Link href="#"><ImGithub /></Socials.Link>
+          <Socials.Link target="_blank" href="https://github.com/ByrnesByrnes"><ImGithub /></Socials.Link>
         </Socials.Item>
         <Socials.Item>
-          <Socials.Link href="#"><ImLinkedin /></Socials.Link>
+          <Socials.Link target="_blank" href="www.linkedin.com/in/myron-byrnes"><ImLinkedin /></Socials.Link>
         </Socials.Item>
         
          <Socials.Item style={{ display: curRoute === ROUTES.CONTACT ? 'none' : 'block'}}>

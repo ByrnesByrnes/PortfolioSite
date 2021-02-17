@@ -6,6 +6,11 @@ export function ProjectContainer({ projects }) {
 
   return (
     <Project>
+      <h1
+        style={{
+          textAlign: "center"
+        }}
+        >My <span className="accent">Portfolio</span></h1>
       {projects.map(project => (
         <Project.Item key={project.id}>
           <Project.Info>
@@ -20,7 +25,7 @@ export function ProjectContainer({ projects }) {
 
           </Project.Info>
           <Project.Group>
-            <Project.Image src={project.img} />
+            <Project.Image src={project.img} alt={project.title}/>
           </Project.Group>
         </Project.Item>
       ))}

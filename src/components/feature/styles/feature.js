@@ -8,21 +8,20 @@ import {
 
 export const Container = styled.section
 `
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: var(--clr-bg);
-  display: grid;
-  justify-content: center;
+ 
+  display: flex;
   align-items: center;
+  background: var(--clr-bg);
   transition: .4s ease-in-out;
+  min-height: 100vh;
+  
 `
 
-export const Title = styled.h2 
+export const Title = styled.h1 
 `
   position: relative;
   z-index: 10;
-  font-size: 3em;
+
  
 
   @media (min-width: 991px) {
@@ -71,21 +70,24 @@ export const Link = styled(RouterLink)
 
 export const Image = styled.img 
 `
-  position: absolute;
   opacity: 0;
-  max-width: 500px;
-  transform: translateX(-10%);
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 100%;
   animation: ${fadeIn} 1s ease-in-out forwards;
   animation-delay: 3.8s;
+  display: none;
+  transition: .4s ease-in-out;
+  
+  @media (min-width: 800px) {
+    display: block;
+    margin-left: auto;
+    max-width: 500px;
+  }
 
   @media (min-width: 991px) {
-    top: 42%;
-    right: 10%;
-    width: 50%;
-    max-width: 1400px;
+    max-width: 700px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1000px;
   }
 
 `
@@ -93,12 +95,10 @@ export const Image = styled.img
 export const Group = styled.div 
 `
   position: absolute;
-  left: 10%;
-  max-width: 700px;
-  
+
   ${Title},
   ${Subtitle} {
-    position: relative;
+  
     display: inline-block;
     transform-origin: left;
     text-transform: uppercase;
@@ -132,4 +132,3 @@ export const Group = styled.div
     animation-delay: 2.9s;
   }
 `
-  
