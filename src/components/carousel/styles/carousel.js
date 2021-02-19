@@ -7,12 +7,12 @@ export const Container = styled.div
   overflow-x: hidden;
   margin: 0 auto;
   position: relative;
-  
 `
 
 export const Slide = styled.img
 `
   width: 100%;
+  height: auto;
   transition: .2s;
 `
 
