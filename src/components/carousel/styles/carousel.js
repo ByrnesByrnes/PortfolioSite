@@ -2,17 +2,22 @@ import styled from 'styled-components'
 
 export const Container = styled.div   
 `
-  width: 100%;
-  max-width: 1300px;
-  display:flex;
-  overflow-x: hidden;
   position: relative;
+  display:flex;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    max-width: 1300px;
+  }
 `
 
 export const Slide = styled.img
 `
+  display: block;
   width: 100%;
-  transition: .2s;
+  object-fit: contain;
 `
 
 export const Arrow = styled.div

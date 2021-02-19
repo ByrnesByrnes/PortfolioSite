@@ -8,6 +8,10 @@ export const Container = styled.div
   bottom: 80px;
   display: flex;
   flex-direction: column;
+  background-color: var(--clr-bg);
+  border-radius: 10px 0 0 10px;
+  padding-top: 15px;
+  transition: .4s ease-in-out;
   
   @media (max-width: 390px){
     bottom: 40px;

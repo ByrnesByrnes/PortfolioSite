@@ -53,9 +53,9 @@ export function CarouselContainer({slides, alt}) {
             transform: `translateX(${current}%)`,
             transition: current === 0 ? 'none' : '.4s ease-in-out'
           }}
-      >
+      />
 
-      </Carousel.Slide>
+     
     ))}
  
       <Carousel.Arrow onClick={prevSlide}><GrPrevious/></Carousel.Arrow>
