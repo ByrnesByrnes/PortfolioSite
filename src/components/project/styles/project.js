@@ -69,7 +69,7 @@ export const Image = styled.img
 `
 export const LinkGroup = styled.div
 `
-  text-align:center;
+  text-align: center;
 
   @media (min-width 991px) {
     text-align: left;
@@ -90,6 +90,5 @@ export const Link = styled.a
 
   &:hover {
     background: var(--clr-secondary);
-
   }
 `

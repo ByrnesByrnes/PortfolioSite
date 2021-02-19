@@ -44,27 +44,23 @@ export function CarouselContainer({ slides, alt }) {
   // }, [current])
 
   return (
-    <Carousel className="carousel"
-      style={{ justifyContent: direction }}
-    >
+    <Carousel>
+        <Carousel.Content style={{ justifyContent: direction }}>
       {slides.map((slide, i) => (
-        <Carousel.Slide className="carousel__slide"
-          key={i}
-          src={slide}
-          alt={alt}
-          style={{
-            transform: `translateX(${current}%)`,
-            transition: current === 0 ? 'none' : '.4s ease-in-out'
-          }}
-        />
+          <Carousel.Slide
+            key={i}
+            src={slide}
+            alt={alt}
+            style={{
+              transform: `translateX(${current}%)`,
+              transition: current === 0 ? 'none' : '.4s ease-in-out'
+            }}
+          />
       ))}
+        </Carousel.Content>
 
-      <Carousel.Arrow className="carousel__arrow" onClick={prevSlide}>
-        <GrPrevious />
-      </Carousel.Arrow>
-      <Carousel.Arrow className="carousel__arrow" onClick={nextSlide}>
-        <GrNext />
-      </Carousel.Arrow>
+      <Carousel.Arrow onClick={prevSlide}><GrPrevious /></Carousel.Arrow>
+      <Carousel.Arrow onClick={nextSlide}><GrNext /></Carousel.Arrow>
     </Carousel>
   )
 }
