@@ -8,8 +8,8 @@ export const Container = styled.div
   border: 3px solid red;
 
   // justify-content: flex-start;
-  // width: 100%;
-  // height: fit-content;
+  width: 100%;
+
   
 
   // @media (min-width: 700px) {
@@ -21,7 +21,7 @@ export const Slide = styled.img
 `
   // display: block;
   width: 100%;
-  // object-fit: contain;
+  object-fit: contain;
   // transition: '.4s ease-in-out;
 `
 
