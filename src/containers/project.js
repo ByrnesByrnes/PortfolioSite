@@ -20,10 +20,10 @@ export function ProjectContainer({ projects }) {
             </Project.LinkGroup>
 
           </Project.Info>
-          <Project.Group>
-            <CarouselContainer slides={project.imgs} alt={project.title} />
 
-          </Project.Group>
+          <CarouselContainer slides={project.imgs} alt={project.title} />
+
+
         </Project.Item>
       ))}
 
