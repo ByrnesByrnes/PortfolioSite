@@ -36,10 +36,10 @@ export function CarouselContainer({slides, alt}) {
     setCurrent(current => current = 0)
   }
 
-  useEffect(() => {
-    const id = setTimeout(() => nextSlide(), 6000)
-    return () => clearTimeout(id)
-  }, [current])
+  // useEffect(() => {
+  //   const id = setTimeout(() => nextSlide(), 6000)
+  //   return () => clearTimeout(id)
+  // }, [current])
 
 
   return (
@@ -54,12 +54,9 @@ export function CarouselContainer({slides, alt}) {
             transition: current === 0 ? 'none' : '.4s ease-in-out'
           }}
       />
-
-     
     ))}
  
       <Carousel.Arrow onClick={prevSlide}><GrPrevious/></Carousel.Arrow>
-
       <Carousel.Arrow onClick={nextSlide}><GrNext/></Carousel.Arrow>
     
     </Carousel>

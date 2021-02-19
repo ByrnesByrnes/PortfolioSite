@@ -11,7 +11,7 @@ export const Item = styled.div
   flex-direction: column;
   padding: 40px 0;
   justify-content: center;
-  height: fit-content;
+  
   border-bottom: 1px solid var(--clr-secondary);
 
   :last-of-type {
@@ -40,6 +40,9 @@ export const Group = styled.div
 export const Info = styled.div 
 `
   width: 100%;
+  @media (min-width: 991px) {
+    min-width: 500px;
+  }
 `
 export const Title = styled.h2
 `

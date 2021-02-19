@@ -18,12 +18,8 @@ export function ProjectContainer({ projects }) {
               <Project.Link href={project.site} target="_blank">Demo</Project.Link>
               <Project.Link href={project.source} target="_blank">Source Code</Project.Link>
             </Project.LinkGroup>
-
           </Project.Info>
-
           <CarouselContainer slides={project.imgs} alt={project.title} />
-
-
         </Project.Item>
       ))}
 
