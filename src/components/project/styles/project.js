@@ -7,11 +7,7 @@ export const Container = styled.section
 `
 export const Item = styled.div
 `
-  display: flex;
-  flex-direction: column;
   padding: 40px 0;
-  justify-content: center;
-  
   border-bottom: 1px solid var(--clr-secondary);
 
   :last-of-type {
@@ -20,10 +16,11 @@ export const Item = styled.div
     padding-bottom: 40px;
   }
 
-  @media (min-width: 991px) {
+  @media (min-width: 750px) {
+    display: flex;
     flex-direction: row;
-    
     align-items: center;
+
     gap: 50px;
 
     &:nth-child(even) {

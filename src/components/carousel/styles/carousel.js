@@ -5,10 +5,7 @@ export const Container = styled.div
   overflow: hidden;
   position: relative;
   border: 3px solid red;
- 
   width: 100%;
-  
-
 `
 export const Content =styled.div
 `
@@ -18,7 +15,6 @@ export const Content =styled.div
 
 export const Slide = styled.img
 `
-  
   width: 100%;
   object-fit: contain;
 `
