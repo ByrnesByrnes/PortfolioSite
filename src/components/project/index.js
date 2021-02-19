@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Container,
-  Image,
   Title,
   Subtitle,
   Text,
@@ -30,10 +29,6 @@ Project.Title = function ProjectTitle({children, ...restProps}) {
 
 Project.Subtitle = function ProjectSubtitle({children, ...restProps}) {
   return <Subtitle {...restProps}>{children}</Subtitle>
-}
-
-Project.Image = function ProjectImage({children, ...restProps}) {
-  return <Image {...restProps}>{children}</Image>
 }
 
 Project.Text = function ProjectText({children, ...restProps}) {

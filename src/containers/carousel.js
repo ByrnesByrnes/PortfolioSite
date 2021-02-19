@@ -45,8 +45,8 @@ export function CarouselContainer({ slides, alt }) {
 
   return (
     <Carousel>
-        <Carousel.Content style={{ justifyContent: direction }}>
-      {slides.map((slide, i) => (
+      <Carousel.Content style={{ justifyContent: direction }}>
+        {slides.map((slide, i) => (
           <Carousel.Slide
             key={i}
             src={slide}
@@ -56,8 +56,8 @@ export function CarouselContainer({ slides, alt }) {
               transition: current === 0 ? 'none' : '.4s ease-in-out'
             }}
           />
-      ))}
-        </Carousel.Content>
+        ))}
+      </Carousel.Content>
 
       <Carousel.Arrow onClick={prevSlide}><GrPrevious /></Carousel.Arrow>
       <Carousel.Arrow onClick={nextSlide}><GrNext /></Carousel.Arrow>

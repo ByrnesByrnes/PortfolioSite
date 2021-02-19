@@ -20,7 +20,6 @@ export const Item = styled.div
     display: flex;
     flex-direction: row;
     align-items: center;
-
     gap: 50px;
 
     &:nth-child(even) {
@@ -43,34 +42,28 @@ export const Info = styled.div
 `
 export const Title = styled.h2
 `
+  font-size: 1.8rem;
   color: var(--clr-secondary);
   margin-bottom: 10px;
 `
 
 export const Subtitle = styled.h3
 `
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 10px;
 `
 
 export const Text = styled.p 
 `
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
   line-height: 1.5;
 `
 
-export const Image = styled.img 
-`
-  width: 100%;
-`
 export const LinkGroup = styled.div
 `
   text-align: center;
-
-  @media (min-width 991px) {
-    text-align: left;
-  }
 `
 
 export const Link = styled.a
