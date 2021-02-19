@@ -1,6 +1,6 @@
 import React from 'react';
 import { Project } from '../components'
-
+import {CarouselContainer} from './carousel'
 
 export function ProjectContainer({ projects }) {
 
@@ -21,7 +21,8 @@ export function ProjectContainer({ projects }) {
 
           </Project.Info>
           <Project.Group>
-            <Project.Image src={project.img} alt={project.title}/>
+          <CarouselContainer slides={project.imgs} alt={project.title}/>
+            {/* <Project.Image src={project.img[1]} alt={project.title}/> */}
           </Project.Group>
         </Project.Item>
       ))}
