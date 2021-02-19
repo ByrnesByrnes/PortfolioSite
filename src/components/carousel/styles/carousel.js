@@ -7,7 +7,8 @@ export const Container = styled.div
   justify-content: flex-start;
   width: 100%;
   overflow: hidden;
-
+  border: 3px solid red;
+  
   @media (min-width: 700px) {
     max-width: 1300px;
   }
