@@ -5,24 +5,20 @@ export const Container = styled.div
   overflow: hidden;
   position: relative;
   border: 3px solid red;
-  max-height: 370px;
+ 
   width: 100%;
   
 
-  // @media (min-width: 700px) {
-  //   max-width: 1300px;
-  // }
-
-  & > div {
-    display: flex;
-  }
 `
 export const Content =styled.div
 `
+  border: 2px solid blue;
+  display:flex;
 `
+
 export const Slide = styled.img
 `
-  // display: block;
+  
   width: 100%;
   object-fit: contain;
 `
