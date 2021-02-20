@@ -4,14 +4,13 @@ export const Container = styled.div
 `
   position: relative;
   border: 3px solid red;
-  
 `
 export const Content = styled.div
 `
   overflow: hidden;
   border: 2px solid blue;
   display: flex;
-  
+  height: fit-content;
 `
 
 export const Slide = styled.img
