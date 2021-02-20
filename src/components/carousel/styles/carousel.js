@@ -16,6 +16,7 @@ export const Content = styled.div
 export const Slide = styled.img
 `
   width: 100%;
+  height: auto;
   max-height: 500px;
 `
 
