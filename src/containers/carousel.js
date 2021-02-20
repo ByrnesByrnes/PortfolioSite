@@ -38,29 +38,23 @@ export function CarouselContainer({ slides, alt }) {
 
   }
 
-  // useEffect(() => {
-  //   const id = setTimeout(() => nextSlide(), 4000)
-  //   return () => clearTimeout(id)
-  // }, [current])
+  useEffect(() => {
+    const id = setTimeout(() => nextSlide(), 4000)
+    return () => clearTimeout(id)
+  }, [current])
 
   return (
-    <Carousel style={{ justifyContent: direction }}>
+    <Carousel style={{ justifyContent: direction}}>
       {slides.map((slide, i) => (
-
-
-        <Carousel.Slide 
-          src={slide} 
-          alt={alt} 
-          key={i} 
+        <Carousel.Slide
+          src={slide}
+          alt={alt}
+          key={i}
           style={{
-              transform: `translateX(${current}%)`,
-              transition: current === 0 ? 'none' : '.4s ease-in-out'
-            }}
+            transform: `translateX(${current}%)`,
+            transition: current === 0 ? 'none' : '.4s ease-in-out'
+          }}
         />
-
-
-
-
       ))}
 
       <Carousel.Arrow onClick={prevSlide}><GrPrevious /></Carousel.Arrow>

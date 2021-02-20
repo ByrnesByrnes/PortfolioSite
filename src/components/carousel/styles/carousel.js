@@ -6,20 +6,19 @@ export const Container = styled.div
   border: 3px solid red;
   display: flex;
   width: 100%;
-  align-content: flex-start;
+  height: fit-content;
   overflow: hidden;
-
 `
 export const Content = styled.div
 `
-  display: block;
-  border: 2px solid blue;
-  width: 100%;
+  border: 10px solid blue;
+  
 `
 
 export const Slide = styled.img
 `
   display: block;
+  
   width: 100%;
 
  

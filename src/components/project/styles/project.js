@@ -31,15 +31,11 @@ export const Item = styled.div
 
 export const Group = styled.div
 `
-  width: 100%;
-  border: 2px solid green;
+ 
 `
 export const Info = styled.div 
 `
   width: 100%;
-  @media (min-width: 991px) {
-    min-width: 500px;
-  }
 `
 export const Title = styled.h2
 `
