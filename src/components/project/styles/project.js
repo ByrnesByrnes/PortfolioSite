@@ -31,7 +31,7 @@ export const Item = styled.div
 
 export const Group = styled.div
 `
-  margin: 0 auto;
+  width: 100%;
 `
 export const Info = styled.div 
 `

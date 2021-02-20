@@ -15,6 +15,7 @@ export const Content = styled.div
 
 export const Slide = styled.img
 `
+  display: block;
   width: 100%;
   
 `
@@ -22,13 +23,15 @@ export const Slide = styled.img
 export const Arrow = styled.div
 `
   position: absolute;
-  top: 50%;
-  cursor: pointer;
-  transform: translateY(-50%);
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
   transition: .3s ease-in-out;
   font-size: 1.4rem;
   padding: 10px;
+  display: flex;
+  align-items: center;
   
   &:last-of-type {
     left: auto;
