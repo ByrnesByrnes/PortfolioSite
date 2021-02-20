@@ -4,11 +4,11 @@ export const Container = styled.div
 `
   position: relative;
   border: 3px solid red;
-  width: 100%;
+  
 `
 export const Content = styled.div
 `
-  overflow: hidden;
+
   border: 2px solid blue;
   display: flex;
 `
@@ -16,8 +16,7 @@ export const Content = styled.div
 export const Slide = styled.img
 `
   display: block;
-  width: 100%;
-  
+  width: 100% !important;
 `
 
 export const Arrow = styled.div
@@ -32,7 +31,7 @@ export const Arrow = styled.div
   padding: 10px;
   display: flex;
   align-items: center;
-  
+
   &:last-of-type {
     left: auto;
     right: 0;

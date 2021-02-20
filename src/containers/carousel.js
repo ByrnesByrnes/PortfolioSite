@@ -13,13 +13,12 @@ export function CarouselContainer({ slides, alt }) {
       setDirection('flex-end')
 
     }
-    const oldSlide = setTimeout(() => {
+    setTimeout(() => {
       setCurrent(current => current + 100)
       let lastSlide = slides.pop()
       slides.unshift(lastSlide)
     }, 100)
     setCurrent(current => current = 0)
-    return () => clearTimeout(oldSlide)
   }
 
   const nextSlide = () => {
@@ -29,13 +28,12 @@ export function CarouselContainer({ slides, alt }) {
       setDirection('flex-start')
     }
 
-    const newSlide = setTimeout(() => {
+    setTimeout(() => {
       setCurrent(current => current - 100)
       let firstSlide = slides.shift()
       slides.push(firstSlide)
     }, 100)
     setCurrent(current => current = 0)
-    return () => clearTimeout(newSlide)
   }
 
   // useEffect(() => {

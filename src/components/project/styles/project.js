@@ -32,6 +32,9 @@ export const Item = styled.div
 export const Group = styled.div
 `
   width: 100%;
+  overflow: hidden;
+  height: fit-content;
+  max-height: 200px;
 `
 export const Info = styled.div 
 `
