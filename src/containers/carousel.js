@@ -47,7 +47,7 @@ export function CarouselContainer({ slides, alt }) {
         {slides.map((slide, i) => (
           <Carousel.Slide
             key={i}
-            src={slide}
+            src={slide.img}
             alt={alt}
             style={{
               transform: `translateX(${current}%)`,

@@ -5,10 +5,19 @@ export const projects = [
     technologies: ['ReactJS', 'SCSS', 'React-hooks', 'React Router'],
     description: 'Built for a client who needed a custom static site. Using netlify CMS for submitting forms through netlify API.',
     imgs: [
-      'imgs/projects/sandr/SandRassistedLiving.jpg',
-      'imgs/projects/sandr/sandr-contact.jpg',
-      'imgs/projects/sandr/sandr-difference.jpg',
-      'imgs/projects/sandr/sandr-services.jpg',
+      {
+        id: 1,
+        img: 'imgs/projects/sandr/SandRassistedLiving.jpg'
+      },
+      {
+        id: 2,
+        img: 'imgs/projects/sandr/sandr-contact.jpg'},
+      {
+        id: 3,
+        img: 'imgs/projects/sandr/sandr-difference.jpg'},
+      {
+        id: 4,
+        img: 'imgs/projects/sandr/sandr-services.jpg'},
     ],
     site: 'https://www.sandrassistedliving.com/',
     source: 'https://github.com/ByrnesByrnes/SandRAssistedLiving',
