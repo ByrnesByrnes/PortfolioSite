@@ -43,7 +43,7 @@ export function CarouselContainer({ slides, alt }) {
 
   return (
     <Carousel>
-      <Carousel.Content style={{ justifyContent: direction }}>
+      {/* <Carousel.Content style={{ justifyContent: direction }}>
         {slides.map((slide, i) => (
           <Carousel.Slide
             key={i}
@@ -55,7 +55,7 @@ export function CarouselContainer({ slides, alt }) {
             }}
           />
         ))}
-      </Carousel.Content>
+      </Carousel.Content> */}
 
       <Carousel.Arrow onClick={prevSlide}><GrPrevious /></Carousel.Arrow>
       <Carousel.Arrow onClick={nextSlide}><GrNext /></Carousel.Arrow>

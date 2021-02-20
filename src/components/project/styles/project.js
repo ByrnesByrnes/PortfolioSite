@@ -32,6 +32,7 @@ export const Item = styled.div
 export const Group = styled.div
 `
   width: 100%;
+  border: 2px solid green;
 `
 export const Info = styled.div 
 `
@@ -56,9 +57,21 @@ export const Subtitle = styled.h3
 
 export const Text = styled.p 
 `
+  display: flex;
+  align-items: center;
   font-size: 1.2rem;
   margin-bottom: 15px;
   line-height: 1.5;
+
+  & > svg {
+    color: var(--clr-secondary);
+    border: 2px solid var(--clr-secondary);
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    margin-left: 10px;
+  }
 `
 
 export const LinkGroup = styled.div

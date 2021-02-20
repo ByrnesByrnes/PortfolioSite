@@ -17,7 +17,7 @@ export const Slide = styled.img
 `
   width: auto;
   max-width: 100%;
-  height: auto;
+  max-height: 500px;
 `
 
 export const Arrow = styled.div
