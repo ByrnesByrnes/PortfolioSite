@@ -6,6 +6,8 @@ export const Container = styled.div
   border: 3px solid red;
   display: flex;
   width: 100%;
+  align-content: flex-start;
+  overflow: hidden;
 
 `
 export const Content = styled.div
@@ -43,32 +45,5 @@ export const Arrow = styled.div
 
   &:hover {
     background: rgba(0,0,0, 0.2);
-  }
-`
-
-export const Full = styled.div
-`
-  position: relative;
-  max-width: 1440px;
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-
-  & .carousel__slide {
-    border: 1px solid yellow;
-  }
-
-  & .carousel__image {
-    border: 1px solid pink;
-    width: 100%;
-  }
-
-
-  & .carousel__prev {
-
-  }
-  
-  & .carousel__next {
-
   }
 `

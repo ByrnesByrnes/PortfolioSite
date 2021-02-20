@@ -46,17 +46,19 @@ export function CarouselContainer({ slides, alt }) {
   return (
     <Carousel style={{ justifyContent: direction }}>
       {slides.map((slide, i) => (
-      
-        <Carousel.Content 
+
+
+        <Carousel.Slide 
+          src={slide} 
+          alt={alt} 
           key={i} 
           style={{
               transform: `translateX(${current}%)`,
               transition: current === 0 ? 'none' : '.4s ease-in-out'
             }}
-        >
-          <Carousel.Slide src={slide} alt={alt} />
-        </Carousel.Content>
-     
+        />
+
+
 
 
       ))}

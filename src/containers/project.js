@@ -23,7 +23,6 @@ export function ProjectContainer({ projects }) {
 
           <Project.Group>
             <CarouselContainer slides={project.imgs} alt={project.title} />
-            <Carousel.Full slides={project.imgs} alt={project.title}/>
           </Project.Group>
     
 
