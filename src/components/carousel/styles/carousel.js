@@ -8,15 +8,16 @@ export const Container = styled.div
 `
 export const Content = styled.div
 `
-
+  overflow: hidden;
   border: 2px solid blue;
   display: flex;
 `
 
 export const Slide = styled.img
 `
-  display: block;
-  width: 100% !important;
+  width: auto;
+  max-width: 100%;
+  height: auto;
 `
 
 export const Arrow = styled.div

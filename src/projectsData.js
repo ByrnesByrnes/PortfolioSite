@@ -33,7 +33,7 @@ export const projects = [
   {
     id: 3,
     title: 'Amazon Clone',
-    technologies: ['ReactJS', 'Styled-components', 'Firebase', 'Stripe', 'React Router'],
+    technologies: ['ReactJS', 'Styled-Components', 'Firebase', 'Stripe', 'React Router'],
     description: 'Emulation of an ecommerce site with login authentication using Firebase. Custom search for products on the browse page, and emulates a checkout flow using Stripe. If successful transaction order is pushed and stored in firebase and retrieved in the view orders tab.',
     imgs: [
       '/imgs/projects/amazon/Amazon-Demo.jpg',
