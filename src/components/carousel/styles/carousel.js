@@ -11,13 +11,15 @@ export const Content = styled.div
   overflow: hidden;
   border: 2px solid blue;
   display: flex;
+  
 `
 
 export const Slide = styled.img
 `
   width: 100%;
-  height: auto;
-  max-height: 500px;
+  object-fit: contain;
+  object-position: center top;
+
 `
 
 export const Arrow = styled.div
