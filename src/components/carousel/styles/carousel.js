@@ -10,7 +10,12 @@ export const Content = styled.div
   overflow: hidden;
   border: 2px solid blue;
   display: flex;
-  height: fit-content;
+  max-height: 205px;
+
+  @media(min-width: 600px) {
+    max-height: none;
+  }
+
 `
 
 export const Slide = styled.img
