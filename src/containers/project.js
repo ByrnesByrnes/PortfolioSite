@@ -1,5 +1,5 @@
 import React from 'react';
-import { Project } from '../components'
+import { Project, Carousel } from '../components'
 import { CarouselContainer } from './carousel'
 import { MdPerson } from 'react-icons/md'
 export function ProjectContainer({ projects }) {
@@ -23,6 +23,7 @@ export function ProjectContainer({ projects }) {
 
           <Project.Group>
             <CarouselContainer slides={project.imgs} alt={project.title} />
+            <Carousel.Full slides={project.imgs} alt={project.title}/>
           </Project.Group>
     
 

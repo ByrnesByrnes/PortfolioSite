@@ -4,22 +4,23 @@ export const Container = styled.div
 `
   position: relative;
   border: 3px solid red;
+  display: flex;
+  width: 100%;
+
 `
 export const Content = styled.div
 `
-  overflow: hidden;
+  display: block;
   border: 2px solid blue;
-  display: flex;
-
-
+  width: 100%;
 `
 
 export const Slide = styled.img
 `
+  display: block;
   width: 100%;
-  object-fit: contain;
-  object-position: center top;
 
+ 
 `
 
 export const Arrow = styled.div
@@ -42,5 +43,32 @@ export const Arrow = styled.div
 
   &:hover {
     background: rgba(0,0,0, 0.2);
+  }
+`
+
+export const Full = styled.div
+`
+  position: relative;
+  max-width: 1440px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+
+  & .carousel__slide {
+    border: 1px solid yellow;
+  }
+
+  & .carousel__image {
+    border: 1px solid pink;
+    width: 100%;
+  }
+
+
+  & .carousel__prev {
+
+  }
+  
+  & .carousel__next {
+
   }
 `

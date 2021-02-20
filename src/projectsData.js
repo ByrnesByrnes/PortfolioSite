@@ -5,19 +5,10 @@ export const projects = [
     technologies: ['ReactJS', 'SCSS', 'React-hooks', 'React Router'],
     description: 'Built for a client who needed a custom static site. Using netlify CMS for submitting forms through netlify API.',
     imgs: [
-      {
-        id: 1,
-        img: 'imgs/projects/sandr/SandRassistedLiving.jpg'
-      },
-      {
-        id: 2,
-        img: 'imgs/projects/sandr/sandr-contact.jpg'},
-      {
-        id: 3,
-        img: 'imgs/projects/sandr/sandr-difference.jpg'},
-      {
-        id: 4,
-        img: 'imgs/projects/sandr/sandr-services.jpg'},
+      'imgs/projects/sandr/SandRassistedLiving.jpg',
+      'imgs/projects/sandr/sandr-contact.jpg',
+      'imgs/projects/sandr/sandr-difference.jpg',
+      'imgs/projects/sandr/sandr-services.jpg',
     ],
     site: 'https://www.sandrassistedliving.com/',
     source: 'https://github.com/ByrnesByrnes/SandRAssistedLiving',
@@ -48,7 +39,7 @@ export const projects = [
       'imgs/projects/amazon/Amazon-Demo.jpg',
       'imgs/projects/amazon/Amazon-browse.jpg',
     ],
-    site: ['https://amzn-cln-ed1f8.firebaseapp.com'],
+    site: 'https://amzn-cln-ed1f8.firebaseapp.com',
     source: 'https://github.com/ByrnesByrnes/amazon-cln',
     client: false,
   },

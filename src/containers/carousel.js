@@ -19,6 +19,7 @@ export function CarouselContainer({ slides, alt }) {
       slides.unshift(lastSlide)
     }, 100)
     setCurrent(current => current = 0)
+
   }
 
   const nextSlide = () => {
@@ -34,6 +35,7 @@ export function CarouselContainer({ slides, alt }) {
       slides.push(firstSlide)
     }, 100)
     setCurrent(current => current = 0)
+
   }
 
   // useEffect(() => {
@@ -42,20 +44,22 @@ export function CarouselContainer({ slides, alt }) {
   // }, [current])
 
   return (
-    <Carousel>
-      <Carousel.Content style={{ justifyContent: direction }}>
-        {slides.map((slide, i) => (
-          <Carousel.Slide
-            key={i}
-            src={slide.img}
-            alt={alt}
-            style={{
+    <Carousel style={{ justifyContent: direction }}>
+      {slides.map((slide, i) => (
+      
+        <Carousel.Content 
+          key={i} 
+          style={{
               transform: `translateX(${current}%)`,
               transition: current === 0 ? 'none' : '.4s ease-in-out'
             }}
-          />
-        ))}
-      </Carousel.Content>
+        >
+          <Carousel.Slide src={slide} alt={alt} />
+        </Carousel.Content>
+     
+
+
+      ))}
 
       <Carousel.Arrow onClick={prevSlide}><GrPrevious /></Carousel.Arrow>
       <Carousel.Arrow onClick={nextSlide}><GrNext /></Carousel.Arrow>
