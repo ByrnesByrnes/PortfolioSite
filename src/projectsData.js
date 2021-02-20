@@ -12,6 +12,7 @@ export const projects = [
     ],
     site: 'https://www.sandrassistedliving.com/',
     source: 'https://github.com/ByrnesByrnes/SandRAssistedLiving',
+    client: true,
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export const projects = [
     ],
     site: 'https://room-static.netlify.app/',
     source: 'https://github.com/ByrnesByrnes/Ecom-Room-Static',
+    client: false,
   },
   {
     id: 3,
@@ -39,5 +41,6 @@ export const projects = [
     ],
     site: ['https://amzn-cln-ed1f8.firebaseapp.com'],
     source: 'https://github.com/ByrnesByrnes/amazon-cln',
+    client: false,
   },
 ]

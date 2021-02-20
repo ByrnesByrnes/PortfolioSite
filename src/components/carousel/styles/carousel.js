@@ -16,7 +16,7 @@ export const Content = styled.div
 export const Slide = styled.img
 `
   width: 100%;
-  object-fit: contain;
+  
 `
 
 export const Arrow = styled.div
