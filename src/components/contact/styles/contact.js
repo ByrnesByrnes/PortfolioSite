@@ -8,7 +8,8 @@ export const Container = styled.section
   max-width: 1000px;
   // background: var(--clr-bg);
   transition: .4s ease-in-out;
-
+  min-height: 60vh;
+  
   &:before {
     content: '';
     position: absolute;

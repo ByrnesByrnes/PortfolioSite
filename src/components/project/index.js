@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useRef, useEffect } from 'react';
 import {
   Container,
   Title,
@@ -12,10 +12,40 @@ import {
 } from './styles/project'
 
 export default function Project({children, ...restProps}) {
+  
   return <Container id="projects" {...restProps}>{children}</Container>
 }
+
 Project.Item = function ProjectItem({children, ...restProps}) {
-  return <Item {...restProps}>{children}</Item>
+  const [element, setElement] = useState(null)
+  const [show, setShow] = useState(false)
+
+  const itemRef = useRef(new IntersectionObserver((entries) => {
+    const first = entries[0]
+
+    setShow(first.isIntersecting && true)
+  },
+  {threshold: .5}))
+  
+ 
+  useEffect(() => {
+    const currentElement = element
+    const currentObserver = itemRef.current
+
+    if(currentElement) {
+      currentObserver.observe(currentElement)
+    }
+
+    return () => currentElement && currentObserver.unobserve(currentElement)
+  },[element])
+
+  return (
+    <Item 
+      className={show ? 'show' : ''}
+      ref={setElement} 
+      {...restProps}
+    >{children}
+    </Item>)
 }
 Project.Group = function ProjectGroup({children, ...restProps}) {
   return <Group {...restProps}>{children}</Group>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaArrowCircleDown } from 'react-icons/fa'
 import {
   Container,
   Title,
@@ -6,6 +7,7 @@ import {
   Text,
   Group,
   Link,
+  ScrollDown,
   Image,
   ImageContainer,
 } from './styles/feature'
@@ -32,6 +34,17 @@ Feature.Text = function FeatureText({children, ...restProps}) {
 
 Feature.Link = function FeatureLink({children, ...restProps}) {
   return <Link {...restProps}>{children}</Link>
+}
+
+Feature.ScrollDown = function FeatureScrollDown({...restProps}) {
+  return (
+    <ScrollDown 
+      activeClass="active"
+      smooth={true}
+      duration={500}
+      offset={-70}
+    to="about" {...restProps}><FaArrowCircleDown /></ScrollDown>
+  )
 }
 
 Feature.Image = function FeatureImage({...restProps}) {

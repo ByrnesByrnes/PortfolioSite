@@ -10,6 +10,9 @@ import { projects } from '../projectsData'
 
 export default function Home() {
 
+ 
+
+
   return (
    <>
       <Load />

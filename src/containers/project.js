@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Project, Carousel } from '../components'
 import { CarouselContainer } from './carousel'
 import { MdPerson } from 'react-icons/md'
 export function ProjectContainer({ projects }) {
+
+
 
   return (
     <Project>

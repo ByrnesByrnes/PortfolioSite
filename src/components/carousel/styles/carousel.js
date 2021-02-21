@@ -3,16 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.div   
 `
   position: relative;
-  border: 3px solid red;
   width: 100%;
   overflow: hidden;
 
   display: flex;
-`
-export const Content = styled.div
-`
-  border: 10px solid blue;
-  width: 100%;
 `
 
 export const Slide = styled.img

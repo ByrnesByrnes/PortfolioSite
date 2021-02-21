@@ -5,7 +5,6 @@ export function FeatureContainer() {
 
   return (
     <Feature>
-    
    
       <Feature.Group>
         <Feature.Title><span className="accent">myron</span> Byrnes</Feature.Title>
@@ -30,7 +29,7 @@ export function FeatureContainer() {
           <CoffeeMug />
         </div>
       </Feature.ImageContainer>
-   
+      <Feature.ScrollDown />
     </Feature>
   )
 }

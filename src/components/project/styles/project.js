@@ -1,36 +1,20 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 
+
+const fadeIn = keyframes
+`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
 export const Container = styled.section
 `
   background: var(--clr-bg);
   transition: .4s ease-in-out;
-`
-export const Item = styled.div
-`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
- 
-  padding: 40px 0;
-  border-bottom: 1px solid var(--clr-secondary);
-
-  :last-of-type {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 40px;
-  }
-
-  @media (min-width: 750px) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
-
-    &:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-  }
-
 `
 
 export const Group = styled.div
@@ -40,6 +24,7 @@ export const Group = styled.div
 export const Info = styled.div 
 `
   width: 100%;
+  transition: 1s ease-in-out;
 `
 export const Title = styled.h2
 `
@@ -94,4 +79,50 @@ export const Link = styled.a
   &:hover {
     background: var(--clr-secondary);
   }
+`
+
+export const Item = styled.div
+`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--clr-secondary);
+  opacity: 0;
+  
+  transition: .4s ease-in-out;
+  & > ${Info} {
+    transform: translateX(108%); 
+  }
+  &:nth-child(even) {
+    & > ${Info}{
+      transform: translateX(-108%); 
+    }
+  }
+
+  &.show {
+    & > ${Info} {
+      transform: translateX(0);
+      transition-delay: .5s;
+    }
+    opacity: 1;
+  }
+
+  :last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: 750px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
 `

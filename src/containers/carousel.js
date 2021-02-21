@@ -18,7 +18,7 @@ export function CarouselContainer({ slides, alt }) {
       setCurrent(current => current + 100)
       let lastSlide = slides.pop()
       slides.unshift(lastSlide)
-    }, 100)
+    }, 200)
     setCurrent(current => current = 0)
 
   }
@@ -34,15 +34,15 @@ export function CarouselContainer({ slides, alt }) {
       setCurrent(current => current - 100)
       let firstSlide = slides.shift()
       slides.push(firstSlide)
-    }, 100)
+    }, 200)
     setCurrent(current => current = 0)
 
   }
 
-  // useEffect(() => {
-  //   const id = setTimeout(() => nextSlide(), 4000)
-  //   return () => clearTimeout(id)
-  // }, [current])
+  useEffect(() => {
+    const id = setTimeout(() => nextSlide(), 4000)
+    return () => clearTimeout(id)
+  }, [current])
 
   return (
     <Carousel style={{ justifyContent: direction}}>

@@ -8,8 +8,8 @@ import {
 
 export const Container = styled.section
 `
- 
   display: flex;
+  position: relative;
   align-items: center;
   min-height: 100vh;
   background: var(--clr-bg);
@@ -63,6 +63,32 @@ export const Link = styled(smoothLink)
     background: var(--clr-secondary);
   }
 `
+
+export const ScrollDown = styled(smoothLink)
+`
+  background: none;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  padding: 0;
+  color: var(--clr-secondary);
+  font-size: 4rem;
+  border: 2px solid transparent;
+
+  display: flex;
+  align-items: center;
+
+  transition: .4s ease-in-out;
+
+  &:hover {
+    color: var(--clr-primary);
+    border-color: var(--clr-secondary);
+    border-radius: 50%;
+   
+  }
+`
+
 export const ImageContainer = styled.div 
 `
   position: relative;
