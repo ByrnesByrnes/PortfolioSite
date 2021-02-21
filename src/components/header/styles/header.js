@@ -35,8 +35,7 @@ export const Group = styled.div
 export const Nav = styled.nav
 `
   position: fixed;
-  top: 60px;
-  height: 100vh;
+  top: 0;
   width: 100%;
  
   transform: translateX(${({ toggle }) => toggle ? '0%' : '100%' });
@@ -60,6 +59,7 @@ export const NavList = styled.ul
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   height: 100vh;
   background: var(--clr-bg);
   transition: .4s ease-in-out;
@@ -72,6 +72,8 @@ export const NavList = styled.ul
 `
 export const NavItem = styled.li
 `
+  padding: 20px 0;
+  
 `
 
 export const Link = styled(smoothLink)
@@ -81,7 +83,7 @@ export const Link = styled(smoothLink)
   margin: 0;
   color: var(--clr-primary);
   width: 100%;
-  border-bottom: 1px solid var(--clr-bdr);
+  
 
   &:last-of-type {
     margin-right: 10px;

@@ -14,8 +14,8 @@ export default function Carousel({ children, ...restProps }) {
 Carousel.Content = function CarouselContent({ children, ...restProps }) {
   return <Content {...restProps}>{children}</Content>
 }
-Carousel.Slide = function CarouselSlide({ ...restProps }) {
-  return <Slide {...restProps} />
+Carousel.Slide = function CarouselSlide({src, ...restProps }) {
+  return <Slide src={src} {...restProps} />
 }
 
 Carousel.Arrow = function CarouselArrow({ children, ...restProps }) {

@@ -4,24 +4,20 @@ export const Container = styled.div
 `
   position: relative;
   border: 3px solid red;
-  display: flex;
   width: 100%;
-  height: fit-content;
   overflow: hidden;
+
+  display: flex;
 `
 export const Content = styled.div
 `
   border: 10px solid blue;
-  
+  width: 100%;
 `
 
 export const Slide = styled.img
 `
-  display: block;
-  
   width: 100%;
-
- 
 `
 
 export const Arrow = styled.div

@@ -104,7 +104,6 @@ export const ImageContainer = styled.div
 export const Image = styled.img 
 `
   width: 800px;
-  height: 100%;
 
   @media(min-width: 1040px) {
     width: 1000px;
@@ -114,7 +113,6 @@ export const Image = styled.img
 export const Group = styled.div 
 `
   position: absolute;
-
   z-index: 10;
 
   ${Title},

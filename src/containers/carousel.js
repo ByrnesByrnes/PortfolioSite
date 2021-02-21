@@ -6,6 +6,7 @@ export function CarouselContainer({ slides, alt }) {
   const [current, setCurrent] = useState(0)
   const [direction, setDirection] = useState('flex-start')
 
+
   const prevSlide = () => {
     if (direction === 'flex-start') {
       let firstSlide = slides.shift()
@@ -38,10 +39,10 @@ export function CarouselContainer({ slides, alt }) {
 
   }
 
-  useEffect(() => {
-    const id = setTimeout(() => nextSlide(), 4000)
-    return () => clearTimeout(id)
-  }, [current])
+  // useEffect(() => {
+  //   const id = setTimeout(() => nextSlide(), 4000)
+  //   return () => clearTimeout(id)
+  // }, [current])
 
   return (
     <Carousel style={{ justifyContent: direction}}>
@@ -55,10 +56,12 @@ export function CarouselContainer({ slides, alt }) {
             transition: current === 0 ? 'none' : '.4s ease-in-out'
           }}
         />
+       
       ))}
 
       <Carousel.Arrow onClick={prevSlide}><GrPrevious /></Carousel.Arrow>
       <Carousel.Arrow onClick={nextSlide}><GrNext /></Carousel.Arrow>
+
     </Carousel>
   )
 }

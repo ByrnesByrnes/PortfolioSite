@@ -5,7 +5,6 @@ export const Container = styled.section
   position: relative;
   display:grid;
   align-items: center;
-  min-height: 60vh;
   max-width: 1000px;
   // background: var(--clr-bg);
   transition: .4s ease-in-out;
