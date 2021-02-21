@@ -39,7 +39,7 @@ export const Nav = styled.nav
   width: 100%;
  
   transform: translateX(${({ toggle }) => toggle ? '0%' : '100%' });
-  z-index: 200;
+  z-index: 80;
   transition: 0.5s;
   
   @media (min-width: 991px) {
@@ -63,7 +63,8 @@ export const NavList = styled.ul
   height: 100vh;
   background: var(--clr-bg);
   transition: .4s ease-in-out;
-  
+ 
+
   @media (min-width: 991px) {
     flex-direction: row;
     height: 60px;
@@ -105,7 +106,7 @@ export const Logo = styled.div
 `
   margin-left: 10px;
   position: relative;
-  z-index: 20;
+  z-index: 100;
   opacity: 0;
   height: 50px;
   line-height: 50px;
@@ -127,7 +128,7 @@ export const Toggle = styled.div
 `
   opacity: 0;
   position: absolute;
-  z-index: 20;
+  z-index: 100;
   font-size: 2em;
   padding-right: 10px;
   height: 32px;
@@ -156,7 +157,7 @@ export const Theme = styled.div
   border-radius: 50px;
   cursor: pointer;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 100;
 
   svg {
     position: absolute;
@@ -180,6 +181,8 @@ export const Theme = styled.div
   }
 
   @media(min-width: 991px) {
-  
+    position: relative;
+    margin-left: auto;
+    margin-right: -1.8rem;
   }
 `

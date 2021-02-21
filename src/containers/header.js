@@ -21,7 +21,7 @@ export function HeaderContainer({ darkMode, setDarkMode }) {
         <Header.Logo>
           <Header.Link to="feature" onClick={() => setToggle(false)}>MB</Header.Link>
         </Header.Logo>
-          <Header.Theme onClick={setDarkMode} darkMode={darkMode} />
+        <Header.Theme onClick={setDarkMode} darkMode={darkMode} />
         <Header.Nav toggle={toggle}>
           <Header.NavList>
             {navLinks.map(item => (

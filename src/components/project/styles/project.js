@@ -7,6 +7,10 @@ export const Container = styled.section
 `
 export const Item = styled.div
 `
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ 
   padding: 40px 0;
   border-bottom: 1px solid var(--clr-secondary);
 
