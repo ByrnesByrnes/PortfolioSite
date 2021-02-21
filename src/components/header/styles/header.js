@@ -15,7 +15,7 @@ export const Container = styled.header
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 50px;
   z-index: 20;
   transition: .4s ease-in-out;
   background-color: var(--clr-bg);
@@ -48,7 +48,7 @@ export const Nav = styled.nav
     width: fit-content;
     left: auto;
     top: 0;
-    height: 60px;
+    height: 50px;
     transform: translateX(0);
   }
 
@@ -67,13 +67,17 @@ export const NavList = styled.ul
 
   @media (min-width: 991px) {
     flex-direction: row;
-    height: 60px;
+    height: 50px;
     align-items: center;
   }
 `
 export const NavItem = styled.li
 `
   padding: 20px 0;
+
+  @media (min-width: 991px) {
+    padding: 0;
+  }
   
 `
 
@@ -84,8 +88,8 @@ export const Link = styled(smoothLink)
   margin: 0;
   color: var(--clr-primary);
   width: 100%;
+  border: none;
   
-
   &:last-of-type {
     margin-right: 10px;
   }
@@ -97,9 +101,6 @@ export const Link = styled(smoothLink)
     background: var(--clr-secondary);
   }
 
-  @media (min-width: 991px) {
-    border: none;
-  }
 `
 
 export const Logo = styled.div
@@ -158,7 +159,9 @@ export const Theme = styled.div
   cursor: pointer;
   overflow: hidden;
   z-index: 100;
-
+  opacity: 0;
+  animation: ${fadeInBottom} .5s ease-in-out forwards;
+  animation-delay: 1.5s;
   svg {
     position: absolute;
     top: 50%;

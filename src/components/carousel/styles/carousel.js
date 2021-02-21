@@ -18,6 +18,7 @@ export const Content = styled.div
 export const Slide = styled.img
 `
   width: 100%;
+  align-self: center;
 `
 
 export const Arrow = styled.div
