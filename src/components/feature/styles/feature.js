@@ -71,14 +71,15 @@ export const ScrollDown = styled(smoothLink)
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%) !important;
+  -webkit-transform: translateX(-50%) !important;
+  -moz-transform: translateX(-50%) !important;
+  -ms-transform: translateX(-50%) !important;
   padding: 0;
   color: var(--clr-secondary);
   font-size: 4rem;
   border: 2px solid transparent;
-
   display: flex;
   align-items: center;
-
   transition: .4s ease-in-out;
 
   &:hover {
