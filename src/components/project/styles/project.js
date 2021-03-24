@@ -89,6 +89,7 @@ export const Item = styled.div
   padding: 40px 0;
   border-bottom: 1px solid var(--clr-secondary);
   opacity: 0;
+  overflow-x: hidden;
   
   transition: .4s ease-in-out;
   & > ${Info} {

@@ -19,7 +19,8 @@ export const Skills = styled.div
 
 export const Group = styled.div 
 `
-  margin: 4rem 0;
+  margin: 4rem 0px;
+  padding: 0 10px;
   width: 100%;
   text-align: center;
   
@@ -61,9 +62,11 @@ export const Skill = styled.div
 
 export const Text = styled.p
 `
+
   width: 100%;
   @media(min-width: 800px) {
     max-width: 500px;
+    text-align: left;
   }
 `
 

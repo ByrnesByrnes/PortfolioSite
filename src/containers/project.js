@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { Project, Carousel } from '../components'
+import React from 'react';
+import { Project } from '../components'
 import { CarouselContainer } from './carousel'
 import { MdPerson } from 'react-icons/md'
 export function ProjectContainer({ projects }) {
@@ -22,11 +22,8 @@ export function ProjectContainer({ projects }) {
               <Project.Link href={project.source} target="_blank">Source Code</Project.Link>
             </Project.LinkGroup>
           </Project.Info>
-
-         
-          <CarouselContainer slides={project.imgs} alt={project.title} />
         
-    
+          <CarouselContainer slides={project.imgs} alt={project.title} />
 
         </Project.Item>
       ))}
