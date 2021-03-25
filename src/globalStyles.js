@@ -158,6 +158,30 @@ export const GlobalStyle = createGlobalStyle
     padding: 0;
     text-decoration: none;
   }
+
+  .resume {
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    font-weight: 600;
+    display: inline-block;
+    margin: 20px 0 0 10px;
+    padding: 10px 20px;
+    background: var(--clr-primary);
+    color: var(--clr-text);
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    transform: translateX(0);
+    animation: ${fadeInBottom} 0.5s linear forwards;
+    animation-delay: 4s;
+    transition: .4s ease-in-out;
+    border-radius: 8px;
+    &:hover {
+      color: var(--clr-primary);
+      background: var(--clr-secondary);
+    }
+  }
 `
 
 export const Link = styled(SmoothLink)
