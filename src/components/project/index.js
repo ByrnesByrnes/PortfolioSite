@@ -48,7 +48,7 @@ Project.Item = function ProjectItem({children, ...restProps}) {
     const first = entries[0]
     setShow(first.isIntersecting)
   },
-  {threshold: .5}))
+  {threshold: .3}))
   
   useEffect(() => {
    

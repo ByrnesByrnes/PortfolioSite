@@ -28,7 +28,7 @@ export const Group = styled.div
     &:first-of-type {
       display: flex;
       justify-content: space-around;
-     
+      align-items: center;
     }
     &:last-of-type{
       text-align: center;

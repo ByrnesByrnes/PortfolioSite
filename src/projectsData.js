@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: 'S and R Assisted Living Facility',
-    technologies: ['ReactJS', 'SCSS', 'React-hooks', 'React Router'],
+    technologies: ['ReactJS', 'SCSS', 'React-hooks', 'React Router', 'Netlify'],
     description: 'Built for a client who needed a custom static site. Using netlify CMS for submitting forms through netlify API.',
     imgs: [
       'imgs/projects/sandr/SandRassistedLiving.jpg',
@@ -18,7 +18,7 @@ export const projects = [
     id: 2,
     title: 'Room (E-commerce)',
     technologies: ['ReactJS', 'SCSS','Netlify', 'EasyShip API', 'React Router'],
-    description: 'Ecommerce site connecting to a product API and easyShip API for shipping rates. Storing State in React Context API in conjunction with useReducer to emulate a single source of truth. On refresh Favorites and Cart persist from being saved in Local Storage.',
+    description: 'Created an Ecommerce site from scratch that connects to multiple API\'s. Storing State in React Context API in conjunction with useReducer to emulate a single source of truth. On refresh Favorites and Cart persist from being saved in Local Storage.',
     imgs: [
       'imgs/projects/room/Room-Ecom.jpg',
       'imgs/projects/room/room-browse.jpg',

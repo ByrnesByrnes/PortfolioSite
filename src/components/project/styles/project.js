@@ -89,21 +89,16 @@ export const Item = styled.div
   padding: 40px 0;
   border-bottom: 1px solid var(--clr-secondary);
   opacity: 0;
-  overflow-x: hidden;
+  overflow-y: hidden;
   
   transition: .4s ease-in-out;
   & > ${Info} {
-    transform: translateX(108%); 
-  }
-  &:nth-child(even) {
-    & > ${Info}{
-      transform: translateX(-108%); 
-    }
+    transform: translateY(130%); 
   }
 
   &.show {
     & > ${Info} {
-      transform: translateX(0);
+      transform: translateY(0);
       transition-delay: .5s;
     }
     opacity: 1;

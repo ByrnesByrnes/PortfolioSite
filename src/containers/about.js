@@ -8,10 +8,10 @@ export function AboutContainer() {
 
   return (
     <About>
-      <About.Group>
-        <About.Title>About <span className="accent">Me</span></About.Title>
-        <About.Text>I have a passion for making beautiful, responsive websites and web applications. Technology has always been a major interest in my life, and to combine modern web technology with an attention to detail is the best way to gaurentee a beautiful modern website.</About.Text>
-      </About.Group>
+      {/* <About.Group> */}
+        {/* <About.Title>About <span className="accent">Me</span></About.Title> */}
+        {/* <About.Text>I love creating websites and drinking coffee while I do it.</About.Text> */}
+      {/* </About.Group> */}
       <About.Group>
         <About.Title>My <span className="accent">Skillset</span></About.Title>
         <About.Skills>
