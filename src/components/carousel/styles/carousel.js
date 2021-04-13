@@ -5,14 +5,12 @@ export const Container = styled.div
   position: relative;
   width: 100%;
   overflow: hidden;
-
   display: flex;
 `
 
 export const Slide = styled.img
 `
-  width: 100%;
-  align-self: center;
+  max-width: 100%;
 `
 
 export const Arrow = styled.div

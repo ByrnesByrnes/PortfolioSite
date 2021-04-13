@@ -16,25 +16,6 @@ export default function Project({children, ...restProps}) {
   return <Container id="projects" {...restProps}>{children}</Container>
 }
 
-//  working on observer turning into a hook
-
-// const UseObserver = (setShow) => {
- 
-
-//   const domNode = useRef(new IntersectionObserver((entries) => {
-//     const first = entries[0]
-//     setShow(first.isIntersecting)
-//   },{threshold: .5}))  
-
-//   useEffect(() => {
-//     if(domNode) domNode.current.observe(domNode)
-
-//     return () => domNode.current.unobserve(domNode)
-//   },[domNode])
-
-//   return domNode 
-// }
-
 Project.Item = function ProjectItem({children, ...restProps}) {
   const [element, setElement] = useState(null)
   const [show, setShow] = useState(false)
