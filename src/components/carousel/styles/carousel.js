@@ -11,6 +11,8 @@ export const Container = styled.div
 export const Slide = styled.img
 `
   max-width: 100%;
+  // fixes mobile height (prevents stretching)
+  align-self: center;
 `
 
 export const Arrow = styled.div
