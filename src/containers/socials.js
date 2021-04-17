@@ -15,10 +15,9 @@ export function SocialsContainer() {
         <Socials.Item>
           <Socials.Link target="_blank" href="https://github.com/ByrnesByrnes"><ImGithub /></Socials.Link>
         </Socials.Item>
-        <Socials.Item>
+        {/* <Socials.Item>
           <Socials.Link target="_blank" href="https://www.linkedin.com/in/myron-byrnes"><ImLinkedin /></Socials.Link>
-        </Socials.Item>
-        
+        </Socials.Item> */}
          <Socials.Item style={{ display: 'block'}}>
           <BiMessageDetail onClick={() => setModalShow(!modalShow)} />
         </Socials.Item>
