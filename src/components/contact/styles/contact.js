@@ -26,10 +26,6 @@ export const Title = styled.h1
 `
   text-align: center;
   margin-bottom: 0;
-
-  @media(min-width: 600px) {
-    text-align: left;
-  }
 `
 
 export const Group = styled.div 
