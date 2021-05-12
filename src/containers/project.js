@@ -20,6 +20,7 @@ export function ProjectContainer({ projects }) {
             <Project.LinkGroup>
               <Project.Link href={project.site} target="_blank">{project.client ? 'Live Site' : 'Demo Site'}</Project.Link>
               <Project.Link href={project.source} target="_blank">Source Code</Project.Link>
+              {project.mockup && <Project.Link href={project.mockup} target="_blank">Mock Up</Project.Link>}
             </Project.LinkGroup>
           </Project.Info>
         
