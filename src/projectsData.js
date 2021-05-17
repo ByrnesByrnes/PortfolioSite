@@ -32,6 +32,22 @@ export const projects = [
   },
   {
     id: 3,
+    title: 'Valorant (Desktop Dashboard) - Not Responsive',
+    technologies: ['ReactJS', 'SCSS', 'React-Spring'],
+    description: 'Designed by Dmitry Kiiashko from Dribbble.com. ',
+    imgs: [
+      './imgs/projects/valorant/champion-dashboard.png',
+      './imgs/projects/valorant/champion.png',
+      './imgs/projects/valorant/champion-phoenix.png',
+      './imgs/projects/valorant/champion-sage.png',
+    ],
+    site: 'https://valorant-dashboard.netlify.app/',
+    source: 'https://github.com/ByrnesByrnes/Riot-Valorant-Dashboard',
+    mockup: 'https://www.figma.com/proto/BHd4pzLRvZ6xhanLtFflqk/Valorant---Agents-page-concept-design?node-id=1%3A2&scaling=scale-down',
+    client: false,
+  },
+  {
+    id: 4,
     title: 'Amazon Clone',
     technologies: ['ReactJS', 'Styled-Components', 'Firebase', 'Stripe', 'React Router'],
     description: 'Emulation of an ecommerce site with login authentication using Firebase. Custom search for products on the browse page, and emulates a checkout flow using Stripe. If successful transaction order is pushed and stored in firebase and retrieved in the view orders tab.',
@@ -44,10 +60,10 @@ export const projects = [
     client: false,
   },
   {
-    id: 4,
+    id: 5,
     title: 'Drone Landing Page',
     technologies: ['HTML', 'CSS', 'Vanilla JS'],
-    description: 'Created from a Mock up',
+    description: 'Responsive landing page created from a mock up.',
     imgs: [
       'imgs/projects/drone/hero.png',
       'imgs/projects/drone/quote.png',
@@ -59,11 +75,10 @@ export const projects = [
     client: false,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Designer Site Landing Page',
     technologies: ['ReactJS', 'SCSS', 'Figma'],
-    description: 'Created a mock of a website using figma with responsive design.',
-    // Using REM and EM units to allow easy reponsive fonts sizes to be i
+    description: 'Responsive mobile first design, that was created using figma.',
     imgs: [
       'imgs/projects/designer/hero.png',
       'imgs/projects/designer/seo.png',
@@ -76,7 +91,7 @@ export const projects = [
     client: false,
   },
   {
-    id: 6,
+    id: 7,
     title: 'Tetris Game',
     technologies: ['Vanilla JS', 'CSS', 'HTML'],
     description: 'Created the classic tetris game',

@@ -11,6 +11,7 @@ const fadeIn = keyframes
     opacity: 1;
   }
 `
+
 export const Container = styled.section
 `
   background: var(--clr-bg);
