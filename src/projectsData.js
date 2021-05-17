@@ -34,7 +34,7 @@ export const projects = [
     id: 3,
     title: 'Valorant (Desktop Dashboard) - Not Responsive',
     technologies: ['ReactJS', 'SCSS', 'React-Spring'],
-    description: 'Designed by Dmitry Kiiashko from Dribbble.com. ',
+    description: 'Champions are clickable as well as each champion ability. Designed by Dmitry Kiiashko from Dribbble.com.',
     imgs: [
       './imgs/projects/valorant/champion-dashboard.png',
       './imgs/projects/valorant/champion.png',
