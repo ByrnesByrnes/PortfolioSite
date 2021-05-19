@@ -19,7 +19,7 @@ export function FeatureContainer() {
           spy={true}
           to="projects">Projects
           </Feature.Link>
-        <a className="resume" href="resume/resume.pdf" target="_blank" >View CV</a>
+        <a className="resume" href="resume/resume-1.pdf" target="_blank" >View CV</a>
         {/* <Feature.Link style={{ marginLeft: "15px" }} href="resume/resume.pdf" open>Download CV</Feature.Link> */}
       </Feature.Group>
       
