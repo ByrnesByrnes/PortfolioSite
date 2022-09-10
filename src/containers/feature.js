@@ -5,7 +5,7 @@ export function FeatureContainer() {
 
   return (
     <Feature>
-   
+
       <Feature.Group>
         <Feature.Title><span className="accent">myron</span> Byrnes</Feature.Title>
         <br />
@@ -18,19 +18,21 @@ export function FeatureContainer() {
           offset={-70}
           spy={true}
           to="projects">Projects
-          </Feature.Link>
+        </Feature.Link>
         {/* <a className="resume" href="resume/resume-1.pdf" target="_blank" >View CV</a> */}
         {/* <Feature.Link style={{ marginLeft: "15px" }} href="resume/resume.pdf" open>Download CV</Feature.Link> */}
       </Feature.Group>
-      
-  
+
+
       <Feature.ImageContainer>
-        <Feature.Image src="imgs/svg/undraw_developer_activity.svg" alt="animted person working on a laptop" />
+        <Feature.Image src="imgs/svg/undraw_developer_activity.svg" alt="animated person working on a laptop" />
         <div>
           <CoffeeMug />
         </div>
       </Feature.ImageContainer>
-      <Feature.ScrollDown />
+      <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", bottom: "5%" }}>
+        <Feature.ScrollDown />
+      </div>
     </Feature>
   )
 }

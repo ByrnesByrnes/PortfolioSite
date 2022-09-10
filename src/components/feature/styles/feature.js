@@ -67,13 +67,6 @@ export const Link = styled(smoothLink)
 export const ScrollDown = styled(smoothLink)
 `
   background: none;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%) !important;
-  -webkit-transform: translateX(-50%) !important;
-  -moz-transform: translateX(-50%) !important;
-  -ms-transform: translateX(-50%) !important;
   padding: 0;
   color: var(--clr-secondary);
   font-size: 4rem;
