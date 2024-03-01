@@ -11,12 +11,7 @@ const encode = (data: any) => {
         .join("&");
 };
 
-interface Props {
-    setModalShow: (value: boolean) => void;
-    messageTitle?: string;
-}
-
-const ContactForm = ({ setModalShow, messageTitle = "Send Message" }: Props) => {
+const ContactForm = () => {
     const [confirm, setConfirm] = useState('');
 
     const [form] = Form.useForm();
@@ -45,11 +40,8 @@ const ContactForm = ({ setModalShow, messageTitle = "Send Message" }: Props) => 
                         setConfirm("Thank You I'll respond as soon as Possible");
 
                         setTimeout(() => {
-                            if (setModalShow) setModalShow(false);
-                            setTimeout(() => {
-                                setConfirm('');
-                            }, 2000);
-                        }, 4000);
+                            setConfirm('');
+                        }, 2000);
                     })
                     .catch(error => setConfirm(error));
 

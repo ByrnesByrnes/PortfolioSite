@@ -6,7 +6,7 @@ const CoffeeMug = () => {
             <div className={styles.cup}>
                 <div className={styles.top}>
                     <div className={styles.vapour}>
-                        {Array(20).fill(0).map((mist, i) => (
+                        {Array(20).fill(0).map((_, i) => (
                             <span
                                 key={i}
                                 style={{ animationDelay: `${((Math.random() * 20) + 1) * -1}s` }}

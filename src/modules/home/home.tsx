@@ -1,5 +1,4 @@
 import Hero from "./components/hero";
-import Contact from "./contact/contact";
 import { default as Projects } from "./projects/projects";
 import { Socials } from "./components";
 import { OverlayLoad } from "modules/ui";

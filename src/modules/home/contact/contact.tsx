@@ -1,10 +1,7 @@
 import { Col, Row } from "antd";
 import { CoffeeMug, ContactForm, Header } from "modules/ui";
-import { useState } from "react";
 
 const Contact = () => {
-    const [modalShow, setModalShow] = useState<boolean>(false);
-
     return (
         <Row gutter={[0, 0]} justify="center">
             <Col>
@@ -16,7 +13,7 @@ const Contact = () => {
                         <CoffeeMug />
                     </Col>
                     <Col span={12}>
-                        <ContactForm setModalShow={setModalShow} />
+                        <ContactForm />
                     </Col>
                 </Row>
             </Col>

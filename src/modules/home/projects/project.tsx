@@ -1,6 +1,5 @@
 import { Carousel, Col, Row, Image, Typography, Flex, Button, theme, Card } from "antd";
 import { Project as ProjectType } from "projectsData";
-import styles from "./styles/project.module.less";
 
 const { Title, Text } = Typography;
 

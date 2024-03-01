@@ -1,8 +1,6 @@
-import { Flex, Layout, Menu, Switch, Typography, theme } from "antd";
-import { menuItems } from "./data";
+import { Flex, Layout, Switch, Typography, theme } from "antd";
 import { WithApp, withApp } from "modules/state";
 import { TbLetterB, TbLetterM } from "react-icons/tb";
-import Icon from "@ant-design/icons";
 
 
 const { Header } = Layout;
@@ -32,7 +30,6 @@ const TopMenu = ({ themeContext }: Props) => {
             </Flex>
             <Flex align="center" gap={8}>
                 <Switch checked={darkTheme} onChange={() => setDarkTheme(!darkTheme)} /> <Text>Theme</Text>
-                {/* <Menu mode="horizontal" items={menuItems} style={{  borderBottom: "unset", background: "transparent" }} /> */}
             </Flex>
         </Header>
     );
