@@ -1,4 +1,4 @@
-import { Button, Col, Flex, Row, Typography, theme } from "antd";
+import { Button, Flex, Typography, theme } from "antd";
 import styles from "./styles/hero.module.less";
 import HeroImage from "./imgs/hero-image";
 import { CoffeeMug } from "modules/ui";

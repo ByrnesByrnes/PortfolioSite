@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const { Item } = Form;
 
-const encode = data => {
+const encode = (data: any) => {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&");
@@ -22,12 +22,13 @@ const ContactForm = ({ setModalShow, messageTitle = "Send Message" }: Props) => 
     const [form] = Form.useForm();
 
 
-    const handleSubmit = (event) => {
-        console.log("Submitting");
+    const handleSubmit = (event: any) => {
+
         form
             .validateFields()
             .then((values) => {
 
+                console.log(confirm);
                 console.log(values);
 
                 fetch("/", {
