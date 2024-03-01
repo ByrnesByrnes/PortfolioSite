@@ -1,0 +1,38 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1100;
+
+    .layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform-origin: top;
+        animation: load .5s ease-in-out forwards;
+    }
+
+    .layer:first-child {
+        z-index: 2;
+    }
+
+    .layer:last-child {
+        animation-delay: .5s;
+        z-index: 1;
+    }
+}
+
+@keyframes load {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}
