@@ -13,7 +13,7 @@ export const Project = ({ project }: Props) => {
 
     return (
         <Row key={project.id} gutter={[24, 16]} align="middle">
-            <Col xs={12} sm={24} md={24} lg={12}>
+            <Col xs={24} sm={24} md={24} lg={12}>
                 <Carousel autoplay>
                     {project.imgs.map((image, index) =>
                         <div>
