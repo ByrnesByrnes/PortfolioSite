@@ -8,41 +8,60 @@ export interface Project {
     mockup?: string;
     source: string;
     client: boolean;
+    testData?: {
+        userName: string;
+        password: string;
+    }[];
 }
-
 
 export const projects: Project[] = [
     {
         id: 1,
         title: "Album Connect",
-        technologies: ["ReactJS", "LESS", "AntD", "DotNet"],
+        technologies: ["ReactJS", "Typescript", "LESS", "AntD", "DotNet"],
         description:
-            "Built for a client who needed a custom static site. Using netlify CMS for submitting forms through netlify API.",
+            "Store photos, videos and organize them in a folder format if you so choose to do so. Add friends to an album so they can upload photos and show the experience they had. (Still Developing)",
         imgs: [
-            "imgs/projects/sandr/SandRassistedLiving.jpg",
-            "imgs/projects/sandr/sandr-contact.jpg",
-            "imgs/projects/sandr/sandr-difference.jpg",
-            "imgs/projects/sandr/sandr-services.jpg",
+            "imgs/projects/album-connect/album-connect.png",            
+            "imgs/projects/album-connect/album-connect-comment.png",            
+            "imgs/projects/album-connect/album-connect-folder.png",            
+            "imgs/projects/album-connect/album-connect-album.png",            
         ],
-        site: "https://www.sandrassistedliving.com/",
-        source: "https://github.com/ByrnesByrnes/SandRAssistedLiving",
-        client: true,
+        site: "https://albumconnect.fly.dev/",
+        source: "",
+        client: false,
+        testData: [
+            {
+                userName: "test",
+                password: "Pa$$w0rd",
+            },
+            {
+                userName: "testTwo",
+                password: "Pa$$w0rd",
+            },
+        ],
     },
     {
         id: 2,
         title: "Synk",
-        technologies: ["ReactJS", "SCSS", "FireBase"],
+        technologies: ["ReactJS", "Typscript", "SCSS", "FireBase"],
         description:
-            "Built for a client who needed a custom static site. Using netlify CMS for submitting forms through netlify API.",
+            "People all around the world can take a photo at a designated time and create a photo of up to 100 people from around the world or join a photo now event",
         imgs: [
-            "imgs/projects/sandr/SandRassistedLiving.jpg",
-            "imgs/projects/sandr/sandr-contact.jpg",
-            "imgs/projects/sandr/sandr-difference.jpg",
-            "imgs/projects/sandr/sandr-services.jpg",
+            "imgs/projects/synk/admin-main.png",
+            "imgs/projects/synk/event-main-upload.png",
+            "imgs/projects/synk/event-edit-photo.png",
+            "imgs/projects/synk/event-edit-photo-two.png",
         ],
-        site: "https://www.sandrassistedliving.com/",
-        source: "https://github.com/ByrnesByrnes/SandRAssistedLiving",
+        site: "https://synk-development.web.app/events",
+        source: "",
         client: true,
+        testData: [
+            {
+                userName: "1 650-555-3311",
+                password: "123456",
+            },
+        ],
     },
     {
         id: 3,

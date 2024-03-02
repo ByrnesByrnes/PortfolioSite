@@ -10,7 +10,7 @@ const App = () => {
 	return (
 		<Layout>
 			<TopMenu />
-			<Content style={{ maxWidth: 1400, margin: "auto", paddingInline: 24, paddingBottom: 48 }}>
+			<Content style={{ width: 1400, maxWidth: "100%", margin: "auto", paddingInline: 24, paddingBottom: 48 }}>
 				<Home />
 			</Content>
 		</Layout >

@@ -4,7 +4,7 @@ import { Socials } from "./components";
 import { OverlayLoad } from "modules/ui";
 const Home = () => {
     return (
-        <div>
+        <>
             <OverlayLoad />
             <Hero />
             <Projects />
@@ -12,7 +12,7 @@ const Home = () => {
 
 
             <Socials />
-        </div>
+        </>
     );
 };
 export default Home;
