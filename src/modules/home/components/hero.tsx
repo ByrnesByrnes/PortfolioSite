@@ -18,7 +18,6 @@ const Hero = () => {
                         <Title level={2} className={styles.subtitle} style={{ marginBlock: 0 }}>Front End Developer</Title>
                     </Flex>
                     <Text strong>I Love solving problems. Let me help solve yours!</Text>
-                    <Button type="primary" size="large" style={{ width: "fit-content" }}>Projects</Button>
                 </Flex>
             </div>
 

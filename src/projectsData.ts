@@ -28,7 +28,7 @@ export const projects: Project[] = [
             "imgs/projects/album-connect/album-connect-album.png",            
         ],
         site: "https://albumconnect.fly.dev/",
-        source: "",
+        source: "https://github.com/ByrnesByrnes/AlbumConnect",
         client: false,
         testData: [
             {

@@ -47,13 +47,11 @@ export const Project = ({ project }: Props) => {
                             </>
                         }
                         <div style={{ minHeight: 56 }}></div>
-                        <div style={{ position: "absolute", bottom: 24, width: "100%" }}>
-                            <Flex justify="center" gap={16}>
-                                <Button href={project.site} target="_blank" type="primary">{project.client ? "Live Site" : "Demo Site"}</Button>
-                                {project.source && <Button href={project.source} target="_blank" type="primary">Source Code</Button>}
-                                {project.mockup && <Button href={project.mockup} type="primary">Mock Up</Button>}
-                            </Flex>
-                        </div>
+                        <Flex justify="center" gap={16} wrap="wrap">
+                            <Button href={project.site} target="_blank" type="primary">{project.client ? "Live Site" : "Demo Site"}</Button>
+                            {project.source && <Button href={project.source} target="_blank" type="primary">Source Code</Button>}
+                            {project.mockup && <Button href={project.mockup} type="primary">Mock Up</Button>}
+                        </Flex>
                     </Flex>
                 </Card>
             </Col>
