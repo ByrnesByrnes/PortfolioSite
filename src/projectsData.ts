@@ -20,12 +20,13 @@ export const projects: Project[] = [
         title: "Album Connect",
         technologies: ["ReactJS", "Typescript", "LESS", "AntD", "DotNet"],
         description:
-            "Store photos, videos and organize them in a folder format if you so choose to do so. Add friends to an album so they can upload photos and show the experience they had. (Still Developing)",
+            "Store photos, videos and organize them in a folder format if you so choose to do so. Add friends to an album so they can upload photos and show the experience they had. (CI/CD)",
         imgs: [
-            "imgs/projects/album-connect/album-connect.png",            
-            "imgs/projects/album-connect/album-connect-comment.png",            
-            "imgs/projects/album-connect/album-connect-folder.png",            
-            "imgs/projects/album-connect/album-connect-album.png",            
+            "imgs/projects/album-connect/album-connect.png",
+            "imgs/projects/album-connect/album-connect-folder.png",
+            "imgs/projects/album-connect/album-connect-album.png",
+            "imgs/projects/album-connect/album-connect-albums.png",
+            "imgs/projects/album-connect/album-connect-comment.png",
         ],
         site: "https://albumconnect.fly.dev/",
         source: "https://github.com/ByrnesByrnes/AlbumConnect",
